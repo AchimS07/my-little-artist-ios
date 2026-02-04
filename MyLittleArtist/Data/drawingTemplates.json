@@ -1,0 +1,98 @@
+[
+  {
+    "id": "circle-simple",
+    "name": "Happy Circle",
+    "svgPath": "<circle cx=\"200\" cy=\"200\" r=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 3,
+    "ageMax": 5,
+    "category": "shapes"
+  },
+  {
+    "id": "star-simple",
+    "name": "Twinkle Star",
+    "svgPath": "<polygon points=\"200,50 230,140 325,140 250,195 275,290 200,235 125,290 150,195 75,140 170,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 3,
+    "ageMax": 5,
+    "category": "shapes"
+  },
+  {
+    "id": "heart-simple",
+    "name": "Love Heart",
+    "svgPath": "<path d=\"M200,320 C200,320 50,200 50,130 C50,60 120,50 150,50 C180,50 200,80 200,100 C200,80 220,50 250,50 C280,50 350,60 350,130 C350,200 200,320 200,320 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 3,
+    "ageMax": 5,
+    "category": "shapes"
+  },
+  {
+    "id": "sun-simple",
+    "name": "Sunny Day",
+    "svgPath": "<circle cx=\"200\" cy=\"200\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"350\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"50\" y1=\"200\" x2=\"100\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"300\" y1=\"200\" x2=\"350\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"94\" y1=\"94\" x2=\"130\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"270\" y1=\"270\" x2=\"306\" y2=\"306\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"94\" y1=\"306\" x2=\"130\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"270\" y1=\"130\" x2=\"306\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 3,
+    "ageMax": 5,
+    "category": "nature"
+  },
+  {
+    "id": "butterfly",
+    "name": "Butterfly",
+    "svgPath": "<ellipse cx=\"200\" cy=\"200\" rx=\"10\" ry=\"100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"140\" cy=\"160\" rx=\"60\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"260\" cy=\"160\" rx=\"60\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"150\" cy=\"260\" rx=\"40\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"250\" cy=\"260\" rx=\"40\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"80\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M185,65 Q170,40 160,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M215,65 Q230,40 240,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 5,
+    "ageMax": 8,
+    "category": "animals"
+  },
+  {
+    "id": "flower",
+    "name": "Pretty Flower",
+    "svgPath": "<circle cx=\"200\" cy=\"200\" r=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"120\" rx=\"30\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"280\" rx=\"30\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"120\" cy=\"200\" rx=\"50\" ry=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"280\" cy=\"200\" rx=\"50\" ry=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"143\" cy=\"143\" rx=\"30\" ry=\"50\" transform=\"rotate(-45 143 143)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"257\" cy=\"143\" rx=\"30\" ry=\"50\" transform=\"rotate(45 257 143)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"143\" cy=\"257\" rx=\"30\" ry=\"50\" transform=\"rotate(45 143 257)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"257\" cy=\"257\" rx=\"30\" ry=\"50\" transform=\"rotate(-45 257 257)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"200\" y1=\"330\" x2=\"200\" y2=\"380\" stroke=\"currentColor\" stroke-width=\"4\"/>",
+    "ageMin": 5,
+    "ageMax": 8,
+    "category": "nature"
+  },
+  {
+    "id": "house",
+    "name": "Cozy House",
+    "svgPath": "<rect x=\"100\" y=\"180\" width=\"200\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"200,60 80,180 320,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"160\" y=\"280\" width=\"80\" height=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"120\" y=\"220\" width=\"50\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"230\" y=\"220\" width=\"50\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"260\" y=\"100\" width=\"30\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 5,
+    "ageMax": 8,
+    "category": "buildings"
+  },
+  {
+    "id": "fish",
+    "name": "Happy Fish",
+    "svgPath": "<ellipse cx=\"180\" cy=\"200\" rx=\"120\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"300,200 380,140 380,260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"180\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M60,200 Q100,230 140,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M180,130 Q200,100 220,130\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"180\" y1=\"180\" x2=\"180\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"175\" x2=\"220\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"260\" y1=\"180\" x2=\"260\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "ageMin": 5,
+    "ageMax": 8,
+    "category": "animals"
+  },
+  {
+    "id": "unicorn",
+    "name": "Magic Unicorn",
+    "svgPath": "<ellipse cx=\"200\" cy=\"250\" rx=\"100\" ry=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"140\" cy=\"170\" rx=\"50\" ry=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"140,110 160,50 120,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"160\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"100\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"150\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"250\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"300\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M300,250 Q350,240 380,280 Q350,260 340,290 Q330,260 310,280\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M100,180 Q60,170 50,200 Q70,190 80,210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "ageMin": 8,
+    "ageMax": 11,
+    "category": "fantasy"
+  },
+  {
+    "id": "rocket",
+    "name": "Space Rocket",
+    "svgPath": "<path d=\"M200,50 Q250,100 250,200 L250,300 L200,350 L150,300 L150,200 Q150,100 200,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"180\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"150,280 100,340 150,320\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"250,280 300,340 250,320\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M180,350 Q170,380 160,390\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M200,350 Q200,390 200,400\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M220,350 Q230,380 240,390\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"175\" y=\"220\" width=\"50\" height=\"40\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "ageMin": 8,
+    "ageMax": 11,
+    "category": "vehicles"
+  },
+  {
+    "id": "dragon",
+    "name": "Friendly Dragon",
+    "svgPath": "<ellipse cx=\"200\" cy=\"220\" rx=\"120\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"150\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"105\" cy=\"140\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M80,170 Q60,180 70,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"90,110 70,70 100,100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"130,100 140,60 160,90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M320,220 Q360,200 380,220 Q360,240 380,260 Q360,280 340,260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"140\" cy=\"300\" rx=\"20\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"300\" rx=\"20\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"260\" cy=\"300\" rx=\"20\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M100,180 Q80,200 80,220 Q60,200 80,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "ageMin": 8,
+    "ageMax": 11,
+    "category": "fantasy"
+  },
+  {
+    "id": "castle",
+    "name": "Princess Castle",
+    "svgPath": "<rect x=\"120\" y=\"200\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"80\" y=\"140\" width=\"60\" height=\"220\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"260\" y=\"140\" width=\"60\" height=\"220\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"110,140 80,80 140,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"290,140 260,80 320,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"170\" y=\"280\" width=\"60\" height=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"150\" y=\"220\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"210\" y=\"220\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"85\" y=\"180\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"285\" y=\"180\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"180\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "ageMin": 8,
+    "ageMax": 11,
+    "category": "buildings"
+  }
+]
