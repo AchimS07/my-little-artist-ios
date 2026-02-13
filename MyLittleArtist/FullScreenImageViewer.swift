@@ -83,22 +83,22 @@ struct FullScreenImageViewer: View {
             .padding()
         }
         .sheet(isPresented: $showingShare) {
-            ActivityView(activityItems: [image])
+            ShareSheetView(activityItems: [image])
                 .ignoresSafeArea()
         }
     }
 }
 
-//struct ActivityView: UIViewControllerRepresentable {
-//    let activityItems: [Any]
-//    var applicationActivities: [UIActivity]? = nil
-//
-//    func makeUIViewController(context: Context) -> UIActivityViewController {
-//        UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
-//    }
-//
-//    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
-//}
+struct ShareSheetView: UIViewControllerRepresentable {
+    let activityItems: [Any]
+    var applicationActivities: [UIActivity]? = nil
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
+}
 
 extension DrawingExporter {
     /// Saves and returns the Photos localIdentifier for the created asset.

@@ -15,14 +15,26 @@
 		5367E08EF767443899FA576A /* SVG/SVGTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EE0FB9C284D4DB8B36F4C /* SVG/SVGTemplateRenderer.swift */; };
 		548227538A864002BEE94101 /* Views/DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */; };
 		91430F1C1F2C461CA606A6A0 /* Views/ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98CB66A4CE24680AC81179F /* Views/ProfileView.swift */; };
-		A5AD16EA2F332FAE00B38C6E /* SavedDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD16E92F332FAE00B38C6E /* SavedDrawing.swift */; };
-		A5AD16EC2F332FB000B38C6E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD16EB2F332FB000B38C6E /* UserProfile.swift */; };
 		A5AD16EF2F3330B600B38C6E /* drawingTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */; };
-		A5AD16F12F33410000B38C6E /* FullScreenImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD16F02F33410000B38C6E /* FullScreenImageViewer.swift */; };
+		A5DFF5DE2F39E5DD00C1916A /* QueryUnderstandingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */; };
+		A5DFF5DF2F39E5DD00C1916A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DD2F39E5DD00C1916A /* UserProfile.swift */; };
+		A5DFF5E02F39E5DD00C1916A /* ActiveProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DB2F39E5DD00C1916A /* ActiveProfileStore.swift */; };
+		A5DFF5E72F39E5EE00C1916A /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5E22F39E5EE00C1916A /* CreateProfileView.swift */; };
+		A5DFF5E82F39E5EE00C1916A /* DrawingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5E32F39E5EE00C1916A /* DrawingCanvas.swift */; };
+		A5DFF5E92F39E5EE00C1916A /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5E12F39E5EE00C1916A /* ColorPaletteView.swift */; };
+		A5DFF5EA2F39E5EE00C1916A /* FullScreenImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5E42F39E5EE00C1916A /* FullScreenImageViewer.swift */; };
+		A5DFF5EB2F39E5EE00C1916A /* OnboardingGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5E52F39E5EE00C1916A /* OnboardingGateView.swift */; };
+		A5DFF5EC2F39E5EE00C1916A /* ProfilesHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5E62F39E5EE00C1916A /* ProfilesHubView.swift */; };
+		A5DFF5F42F39E60E00C1916A /* ParametricBuildingTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5EF2F39E60E00C1916A /* ParametricBuildingTemplateRenderer.swift */; };
+		A5DFF5F52F39E60E00C1916A /* ParametricNatureTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F12F39E60E00C1916A /* ParametricNatureTemplateRenderer.swift */; };
+		A5DFF5F62F39E60E00C1916A /* AIImageGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5ED2F39E60E00C1916A /* AIImageGenerationService.swift */; };
+		A5DFF5F72F39E60E00C1916A /* SavedDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F22F39E60E00C1916A /* SavedDrawing.swift */; };
+		A5DFF5F82F39E60E00C1916A /* TemplatePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F32F39E60E00C1916A /* TemplatePlanner.swift */; };
+		A5DFF5F92F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5EE2F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift */; };
+		A5DFF5FA2F39E60E00C1916A /* ParametricCarTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F02F39E60E00C1916A /* ParametricCarTemplateRenderer.swift */; };
 		A5FD63842F324E760041DF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */; };
 		AEB57BBD36704A2A87DCFB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04727C93884A4B59AE021219 /* Assets.xcassets */; };
 		BF1D6D664D0441899BF28B1B /* Models/DrawingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47669090B12649F28116FB65 /* Models/DrawingTemplate.swift */; };
-		F8C79BE0A5224E609105B78D /* Views/DrawingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FEC4C4221848948B26A911 /* Views/DrawingCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +43,26 @@
 		4208C1D4A7964B4EB5DFA286 /* Models/TemplatesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/TemplatesStore.swift; sourceTree = "<group>"; };
 		47669090B12649F28116FB65 /* Models/DrawingTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DrawingTemplate.swift; sourceTree = "<group>"; };
 		50314247D4B54933958A77CB /* Views/TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/TemplatesView.swift; sourceTree = "<group>"; };
-		50FEC4C4221848948B26A911 /* Views/DrawingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DrawingCanvas.swift; sourceTree = "<group>"; };
 		749E9491663541FA886056CC /* Data/drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data/drawingTemplates.json; sourceTree = "<group>"; };
 		80B15B656E934F74BD8497DB /* App/MyLittleArtistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/MyLittleArtistApp.swift; sourceTree = "<group>"; };
-		A5AD16E92F332FAE00B38C6E /* SavedDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDrawing.swift; sourceTree = "<group>"; };
-		A5AD16EB2F332FB000B38C6E /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drawingTemplates.json; sourceTree = "<group>"; };
-		A5AD16F02F33410000B38C6E /* FullScreenImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewer.swift; sourceTree = "<group>"; };
+		A5DFF5DB2F39E5DD00C1916A /* ActiveProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProfileStore.swift; sourceTree = "<group>"; };
+		A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryUnderstandingService.swift; sourceTree = "<group>"; };
+		A5DFF5DD2F39E5DD00C1916A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A5DFF5E12F39E5EE00C1916A /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
+		A5DFF5E22F39E5EE00C1916A /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		A5DFF5E32F39E5EE00C1916A /* DrawingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvas.swift; sourceTree = "<group>"; };
+		A5DFF5E42F39E5EE00C1916A /* FullScreenImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewer.swift; sourceTree = "<group>"; };
+		A5DFF5E52F39E5EE00C1916A /* OnboardingGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGateView.swift; sourceTree = "<group>"; };
+		A5DFF5E62F39E5EE00C1916A /* ProfilesHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesHubView.swift; sourceTree = "<group>"; };
+		A5DFF5ED2F39E60E00C1916A /* AIImageGenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGenerationService.swift; sourceTree = "<group>"; };
+		A5DFF5EE2F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricAnimalTemplateRenderer.swift; sourceTree = "<group>"; };
+		A5DFF5EF2F39E60E00C1916A /* ParametricBuildingTemplateRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricBuildingTemplateRenderer.swift; sourceTree = "<group>"; };
+		A5DFF5F02F39E60E00C1916A /* ParametricCarTemplateRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricCarTemplateRenderer.swift; sourceTree = "<group>"; };
+		A5DFF5F12F39E60E00C1916A /* ParametricNatureTemplateRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricNatureTemplateRenderer.swift; sourceTree = "<group>"; };
+		A5DFF5F22F39E60E00C1916A /* SavedDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDrawing.swift; sourceTree = "<group>"; };
+		A5DFF5F32F39E60E00C1916A /* TemplatePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePlanner.swift; sourceTree = "<group>"; };
+		A5DFF5FB2F39E61800C1916A /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
 		A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5FD63852F324E8E0041DF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DrawView.swift; sourceTree = "<group>"; };
@@ -62,6 +87,9 @@
 		09DF963385434CF7B08FC44F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A5DFF5DB2F39E5DD00C1916A /* ActiveProfileStore.swift */,
+				A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */,
+				A5DFF5DD2F39E5DD00C1916A /* UserProfile.swift */,
 				47669090B12649F28116FB65 /* Models/DrawingTemplate.swift */,
 				4208C1D4A7964B4EB5DFA286 /* Models/TemplatesStore.swift */,
 			);
@@ -71,6 +99,7 @@
 		32B7CDD8FF5E4592BA555DBE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A5DFF5FB2F39E61800C1916A /* ProfileDataStore.swift */,
 				749E9491663541FA886056CC /* Data/drawingTemplates.json */,
 			);
 			name = Data;
@@ -79,6 +108,13 @@
 		46B51DA51A3440858D6601A1 /* SVG */ = {
 			isa = PBXGroup;
 			children = (
+				A5DFF5ED2F39E60E00C1916A /* AIImageGenerationService.swift */,
+				A5DFF5EE2F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift */,
+				A5DFF5EF2F39E60E00C1916A /* ParametricBuildingTemplateRenderer.swift */,
+				A5DFF5F02F39E60E00C1916A /* ParametricCarTemplateRenderer.swift */,
+				A5DFF5F12F39E60E00C1916A /* ParametricNatureTemplateRenderer.swift */,
+				A5DFF5F22F39E60E00C1916A /* SavedDrawing.swift */,
+				A5DFF5F32F39E60E00C1916A /* TemplatePlanner.swift */,
 				E68EE0FB9C284D4DB8B36F4C /* SVG/SVGTemplateRenderer.swift */,
 			);
 			name = SVG;
@@ -105,10 +141,7 @@
 				04727C93884A4B59AE021219 /* Assets.xcassets */,
 				A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */,
 				A5FD63852F324E8E0041DF12 /* Info.plist */,
-				A5AD16E92F332FAE00B38C6E /* SavedDrawing.swift */,
-				A5AD16EB2F332FB000B38C6E /* UserProfile.swift */,
 				A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */,
-				A5AD16F02F33410000B38C6E /* FullScreenImageViewer.swift */,
 			);
 			path = MyLittleArtist;
 			sourceTree = "<group>";
@@ -132,8 +165,13 @@
 		DE7DDA452AA24750A3F5456B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5DFF5E12F39E5EE00C1916A /* ColorPaletteView.swift */,
+				A5DFF5E22F39E5EE00C1916A /* CreateProfileView.swift */,
+				A5DFF5E32F39E5EE00C1916A /* DrawingCanvas.swift */,
+				A5DFF5E42F39E5EE00C1916A /* FullScreenImageViewer.swift */,
+				A5DFF5E52F39E5EE00C1916A /* OnboardingGateView.swift */,
+				A5DFF5E62F39E5EE00C1916A /* ProfilesHubView.swift */,
 				B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */,
-				50FEC4C4221848948B26A911 /* Views/DrawingCanvas.swift */,
 				FB3C209945154AF69BBBF5A2 /* Views/GalleryView.swift */,
 				F98CB66A4CE24680AC81179F /* Views/ProfileView.swift */,
 				50314247D4B54933958A77CB /* Views/TemplatesView.swift */,
@@ -220,19 +258,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AD16F12F33410000B38C6E /* FullScreenImageViewer.swift in Sources */,
 				13C294FFAD9A44428DCC6939 /* App/MyLittleArtistApp.swift in Sources */,
 				5242B32A62B74A7D8260F73D /* App/RootTabView.swift in Sources */,
 				BF1D6D664D0441899BF28B1B /* Models/DrawingTemplate.swift in Sources */,
 				434A4E12778B480B933A1D50 /* Models/TemplatesStore.swift in Sources */,
 				5367E08EF767443899FA576A /* SVG/SVGTemplateRenderer.swift in Sources */,
 				548227538A864002BEE94101 /* Views/DrawView.swift in Sources */,
-				F8C79BE0A5224E609105B78D /* Views/DrawingCanvas.swift in Sources */,
-				A5AD16EA2F332FAE00B38C6E /* SavedDrawing.swift in Sources */,
-				A5AD16EC2F332FB000B38C6E /* UserProfile.swift in Sources */,
+				A5DFF5DE2F39E5DD00C1916A /* QueryUnderstandingService.swift in Sources */,
+				A5DFF5F42F39E60E00C1916A /* ParametricBuildingTemplateRenderer.swift in Sources */,
+				A5DFF5F52F39E60E00C1916A /* ParametricNatureTemplateRenderer.swift in Sources */,
+				A5DFF5F62F39E60E00C1916A /* AIImageGenerationService.swift in Sources */,
+				A5DFF5F72F39E60E00C1916A /* SavedDrawing.swift in Sources */,
+				A5DFF5F82F39E60E00C1916A /* TemplatePlanner.swift in Sources */,
+				A5DFF5F92F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift in Sources */,
+				A5DFF5FA2F39E60E00C1916A /* ParametricCarTemplateRenderer.swift in Sources */,
+				A5DFF5DF2F39E5DD00C1916A /* UserProfile.swift in Sources */,
+				A5DFF5E02F39E5DD00C1916A /* ActiveProfileStore.swift in Sources */,
 				4CC0C62CF41542189460F1E1 /* Views/GalleryView.swift in Sources */,
 				91430F1C1F2C461CA606A6A0 /* Views/ProfileView.swift in Sources */,
 				21BD10F513274ADE8763148A /* Views/TemplatesView.swift in Sources */,
+				A5DFF5E72F39E5EE00C1916A /* CreateProfileView.swift in Sources */,
+				A5DFF5E82F39E5EE00C1916A /* DrawingCanvas.swift in Sources */,
+				A5DFF5E92F39E5EE00C1916A /* ColorPaletteView.swift in Sources */,
+				A5DFF5EA2F39E5EE00C1916A /* FullScreenImageViewer.swift in Sources */,
+				A5DFF5EB2F39E5EE00C1916A /* OnboardingGateView.swift in Sources */,
+				A5DFF5EC2F39E5EE00C1916A /* ProfilesHubView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,17 +354,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5GM533M3H3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5GM533M3H3;
 				INFOPLIST_FILE = MyLittleArtist/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.mylittleartist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.achims.mylittleartist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MyLittleArtist AppStore";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

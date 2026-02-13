@@ -17,7 +17,7 @@ struct GalleryView: View {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 120), spacing: 12)], spacing: 12) {
                         ForEach(drawings, id: \.id) { item in
                             VStack(spacing: 8) {
-                                if let ui = item.uiImage {
+                                if let ui = item.thumbnail ?? item.uiImage {
                                     Image(uiImage: ui)
                                         .resizable()
                                         .scaledToFill()

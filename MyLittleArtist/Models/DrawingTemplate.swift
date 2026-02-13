@@ -7,6 +7,17 @@ struct DrawingTemplate: Identifiable, Codable, Hashable {
     let ageMin: Int
     let ageMax: Int
     let category: String
+    let rasterPNGData: Data?
+
+    init(id: String, name: String, svgPath: String, ageMin: Int, ageMax: Int, category: String, rasterPNGData: Data? = nil) {
+        self.id = id
+        self.name = name
+        self.svgPath = svgPath
+        self.ageMin = ageMin
+        self.ageMax = ageMax
+        self.category = category
+        self.rasterPNGData = rasterPNGData
+    }
 }
 
 enum TemplateCategory: String, CaseIterable, Identifiable {

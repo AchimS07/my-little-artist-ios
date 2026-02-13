@@ -3,10 +3,19 @@ import SwiftData
 
 @main
 struct MyLittleArtistApp: App {
+    
+    @StateObject private var activeProfileStore = ActiveProfileStore()
+    @AppStorage("appLanguage") private var appLanguage: String = Locale.current.language.languageCode?.identifier ?? "en"
+    private var selectedLocale: Locale { Locale(identifier: appLanguage) }
+
     var body: some Scene {
         WindowGroup {
-            RootTabView()
-                .overlay(LaunchOverlay())
+            NavigationStack {
+                OnboardingGateView()
+            }
+            .environmentObject(activeProfileStore)
+            .environment(\.locale, selectedLocale)
+            .overlay(LaunchOverlay())
         }
         .modelContainer(for: [UserProfile.self, SavedDrawing.self])
     }

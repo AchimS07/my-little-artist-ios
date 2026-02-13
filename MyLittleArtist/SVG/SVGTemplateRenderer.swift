@@ -1,14 +1,23 @@
 import SwiftUI
 import Foundation
+import UIKit
 
 // MARK: - Public Views
 
 struct SVGTemplatePreview: View {
     let svg: String
+    var rasterPNGData: Data? = nil
 
     var body: some View {
-        SVGTemplateCanvas(svg: svg)
-            .padding(10)
+        if let data = rasterPNGData, let ui = UIImage(data: data) {
+            Image(uiImage: ui)
+                .resizable()
+                .scaledToFit()
+                .padding(10)
+        } else {
+            SVGTemplateCanvas(svg: svg)
+                .padding(10)
+        }
     }
 }
 

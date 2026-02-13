@@ -5,6 +5,8 @@ struct ProfileView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var profiles: [UserProfile]
 
+    @EnvironmentObject private var activeProfileStore: ActiveProfileStore
+
     @State private var profile: UserProfile?
 
     var body: some View {
@@ -26,6 +28,24 @@ struct ProfileView: View {
                                 Text("Age: \(profile.age)")
                             }
                         }
+                        Section("Avatar") {
+                            let avatars = ["🦁","🐰","🦊","🐼","🦄","🐶","🐱","🦋","🐸","🐻"]
+                            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 5), spacing: 8) {
+                                ForEach(avatars, id: \.self) { emo in
+                                    Button {
+                                        profile.avatarEmoji = emo
+                                    } label: {
+                                        Text(emo)
+                                            .font(.system(size: 28))
+                                            .frame(maxWidth: .infinity)
+                                            .padding(6)
+                                            .background((profile.avatarEmoji == emo ? Color.purple.opacity(0.25) : Color.secondary.opacity(0.08)))
+                                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                            }
+                        }
 
                         Section("About") {
                             Text("Customize your profile and your age will be used to filter templates on the home screen.")
@@ -41,14 +61,28 @@ struct ProfileView: View {
         }
         .navigationTitle("Profile")
         .task {
+            // Prefer the active profile if available
+            if let active = activeProfileStore.activeProfile {
+                profile = active
+                return
+            }
+
+            // Attempt to load from existing profiles (e.g., on cold start)
             if profile == nil {
-                if let existing = profiles.first {
+                if let existing = profiles.first(where: { $0.id == activeProfileStore.activeProfileID }) {
                     profile = existing
-                } else {
-                    let new = UserProfile(id: UUID(), name: "", age: 6)
-                    modelContext.insert(new)
-                    profile = new
+                    return
                 }
+                if let first = profiles.first {
+                    profile = first
+                    return
+                }
+
+                // No profiles exist yet: create one and make it active
+                let new = UserProfile(id: UUID(), name: "", age: 6)
+                modelContext.insert(new)
+                profile = new
+                activeProfileStore.select(new)
             }
         }
     }
