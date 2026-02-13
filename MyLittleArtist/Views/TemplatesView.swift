@@ -144,10 +144,15 @@ struct TemplatesView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(template.name)
-                        .font(.headline)
-                    Text("Ages \(template.ageMin)–\(template.ageMax) · \(template.category.capitalized)")
-                    Text("Ages \((template.ageMin))–\((template.ageMax)) · \((template.category.capitalized))")
+                    Text(LocalizedStringKey(template.name))
+                    Group {
+                        Text(LocalizedStringKey("template_age_range_format"))
+                        Text(" \(template.ageMin)–\(template.ageMax) · ")
+                        Text(LocalizedStringKey("template_category_prefix"))
+                        Text(LocalizedStringKey(template.category))
+                    }
+                    .foregroundStyle(.secondary)
+                    .font(.subheadline)
                 }
             }
             .padding(.vertical, 4)
@@ -163,7 +168,7 @@ struct TemplatesView: View {
                 if isGenerating {
                     Text("generating_label")
                 } else {
-                    Text(verbatim: "Generate a new template from ‘\(searchText)’")
+                    Text(String(format: String(localized: "generate_from_search"), searchText))
                 }
             }
         }

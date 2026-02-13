@@ -34,11 +34,11 @@ private struct LaunchOverlay: View {
                         .font(.system(size: 72))
                         .symbolRenderingMode(.multicolor)
                         .shadow(radius: 4)
-                    Text("My Little Artist")
+                    Text("launch_title")
                         .font(.system(.largeTitle, design: .rounded))
                         .fontWeight(.heavy)
                         .foregroundStyle(.primary)
-                    Text("Let's draw!")
+                    Text("launch_subtitle")
                         .font(.headline)
                         .foregroundStyle(.secondary)
                 }

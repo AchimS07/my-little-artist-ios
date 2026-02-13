@@ -209,15 +209,15 @@ struct DrawView: View {
                     }
                     .disabled(strokes.isEmpty)
                     .confirmationDialog(
-                        "Are you sure you want to clear your drawing?",
+                        String(localized: "confirm_clear_message"),
                         isPresented: $showClearConfirmation,
                         titleVisibility: .visible
                     ) {
-                        Button("Clear", role: .destructive) {
+                        Button(String(localized: "confirm_clear_confirm"), role: .destructive) {
                             saveToUndoStack()
                             strokes.removeAll()
                         }
-                        Button("Cancel", role: .cancel) {}
+                        Button(String(localized: "confirm_clear_cancel"), role: .cancel) {}
                     }
 
                     Spacer()
