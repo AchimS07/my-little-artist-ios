@@ -6,17 +6,17 @@ struct RootTabView: View {
             NavigationStack {
                 TemplatesView()
             }
-            .tabItem { Label("Templates", systemImage: "square.grid.2x2") }
+            .tabItem { Label(String(localized: "tab_templates"), systemImage: "square.grid.2x2") }
 
             NavigationStack {
                 GalleryView()
             }
-            .tabItem { Label("Gallery", systemImage: "photo.on.rectangle") }
+            .tabItem { Label(String(localized: "tab_gallery"), systemImage: "photo.on.rectangle") }
 
             NavigationStack {
                 ProfileView()
             }
-            .tabItem { Label("Profile", systemImage: "person.crop.circle") }
+            .tabItem { Label(String(localized: "tab_profile"), systemImage: "person.crop.circle") }
         }
     }
 }

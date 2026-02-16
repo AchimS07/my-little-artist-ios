@@ -21,7 +21,7 @@ struct DrawingTemplate: Identifiable, Codable, Hashable {
 }
 
 enum TemplateCategory: String, CaseIterable, Identifiable {
-    case all, shapes, animals, nature, buildings, vehicles, fantasy
+    case all, shapes, animals, nature, buildings, vehicles, fantasy, food
 
     var id: String { rawValue }
 
@@ -34,6 +34,7 @@ enum TemplateCategory: String, CaseIterable, Identifiable {
         case .buildings: return "Buildings"
         case .vehicles: return "Vehicles"
         case .fantasy: return "Fantasy"
+        case .food: return "Food"
         }
     }
 
@@ -46,6 +47,7 @@ enum TemplateCategory: String, CaseIterable, Identifiable {
         case .buildings: return "🏠"
         case .vehicles: return "🚀"
         case .fantasy: return "🦄"
+        case .food: return "🍕"
         }
     }
 }

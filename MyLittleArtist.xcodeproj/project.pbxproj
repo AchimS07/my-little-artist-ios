@@ -15,6 +15,7 @@
 		5367E08EF767443899FA576A /* SVG/SVGTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68EE0FB9C284D4DB8B36F4C /* SVG/SVGTemplateRenderer.swift */; };
 		548227538A864002BEE94101 /* Views/DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */; };
 		91430F1C1F2C461CA606A6A0 /* Views/ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98CB66A4CE24680AC81179F /* Views/ProfileView.swift */; };
+		A55195E62F43085100F7CEF8 /* TemplateImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55195E52F43085000F7CEF8 /* TemplateImportService.swift */; };
 		A5AD16EF2F3330B600B38C6E /* drawingTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */; };
 		A5DFF5DE2F39E5DD00C1916A /* QueryUnderstandingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */; };
 		A5DFF5DF2F39E5DD00C1916A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DD2F39E5DD00C1916A /* UserProfile.swift */; };
@@ -32,6 +33,8 @@
 		A5DFF5F82F39E60E00C1916A /* TemplatePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F32F39E60E00C1916A /* TemplatePlanner.swift */; };
 		A5DFF5F92F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5EE2F39E60E00C1916A /* ParametricAnimalTemplateRenderer.swift */; };
 		A5DFF5FA2F39E60E00C1916A /* ParametricCarTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F02F39E60E00C1916A /* ParametricCarTemplateRenderer.swift */; };
+		A5DFF5FD2F3F0D3600C1916A /* DrawingTemplate+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5FC2F3F0D3600C1916A /* DrawingTemplate+Localization.swift */; };
+		A5DFF5FF2F3F0FA600C1916A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A5DFF5FE2F3F0FA600C1916A /* Localizable.xcstrings */; };
 		A5FD63842F324E760041DF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */; };
 		AEB57BBD36704A2A87DCFB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04727C93884A4B59AE021219 /* Assets.xcassets */; };
 		BF1D6D664D0441899BF28B1B /* Models/DrawingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47669090B12649F28116FB65 /* Models/DrawingTemplate.swift */; };
@@ -45,6 +48,7 @@
 		50314247D4B54933958A77CB /* Views/TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/TemplatesView.swift; sourceTree = "<group>"; };
 		749E9491663541FA886056CC /* Data/drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data/drawingTemplates.json; sourceTree = "<group>"; };
 		80B15B656E934F74BD8497DB /* App/MyLittleArtistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/MyLittleArtistApp.swift; sourceTree = "<group>"; };
+		A55195E52F43085000F7CEF8 /* TemplateImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateImportService.swift; sourceTree = "<group>"; };
 		A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drawingTemplates.json; sourceTree = "<group>"; };
 		A5DFF5DB2F39E5DD00C1916A /* ActiveProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProfileStore.swift; sourceTree = "<group>"; };
 		A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryUnderstandingService.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		A5DFF5F22F39E60E00C1916A /* SavedDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDrawing.swift; sourceTree = "<group>"; };
 		A5DFF5F32F39E60E00C1916A /* TemplatePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePlanner.swift; sourceTree = "<group>"; };
 		A5DFF5FB2F39E61800C1916A /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		A5DFF5FC2F3F0D3600C1916A /* DrawingTemplate+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawingTemplate+Localization.swift"; sourceTree = "<group>"; };
+		A5DFF5FE2F3F0FA600C1916A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5FD63852F324E8E0041DF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DrawView.swift; sourceTree = "<group>"; };
@@ -142,6 +148,8 @@
 				A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */,
 				A5FD63852F324E8E0041DF12 /* Info.plist */,
 				A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */,
+				A5DFF5FC2F3F0D3600C1916A /* DrawingTemplate+Localization.swift */,
+				A55195E52F43085000F7CEF8 /* TemplateImportService.swift */,
 			);
 			path = MyLittleArtist;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F4DA19D0E7F44D81AF6EF7A1 /* Resources/Info.plist */,
+				A5DFF5FE2F3F0FA600C1916A /* Localizable.xcstrings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ro,
 			);
 			mainGroup = FE99301476AD43C9A8BAC3BD;
 			productRefGroup = 7990376094E6444FA6807878 /* Products */;
@@ -247,6 +257,7 @@
 			files = (
 				A5AD16EF2F3330B600B38C6E /* drawingTemplates.json in Resources */,
 				A5FD63842F324E760041DF12 /* LaunchScreen.storyboard in Resources */,
+				A5DFF5FF2F3F0FA600C1916A /* Localizable.xcstrings in Resources */,
 				AEB57BBD36704A2A87DCFB50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +273,11 @@
 				5242B32A62B74A7D8260F73D /* App/RootTabView.swift in Sources */,
 				BF1D6D664D0441899BF28B1B /* Models/DrawingTemplate.swift in Sources */,
 				434A4E12778B480B933A1D50 /* Models/TemplatesStore.swift in Sources */,
+				A55195E62F43085100F7CEF8 /* TemplateImportService.swift in Sources */,
 				5367E08EF767443899FA576A /* SVG/SVGTemplateRenderer.swift in Sources */,
 				548227538A864002BEE94101 /* Views/DrawView.swift in Sources */,
 				A5DFF5DE2F39E5DD00C1916A /* QueryUnderstandingService.swift in Sources */,
+				A5DFF5FD2F3F0D3600C1916A /* DrawingTemplate+Localization.swift in Sources */,
 				A5DFF5F42F39E60E00C1916A /* ParametricBuildingTemplateRenderer.swift in Sources */,
 				A5DFF5F52F39E60E00C1916A /* ParametricNatureTemplateRenderer.swift in Sources */,
 				A5DFF5F62F39E60E00C1916A /* AIImageGenerationService.swift in Sources */,
@@ -345,6 +358,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -354,14 +368,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 5GM533M3H3;
 				INFOPLIST_FILE = MyLittleArtist/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.achims.mylittleartist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MyLittleArtist AppStore";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "My Little Artist Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

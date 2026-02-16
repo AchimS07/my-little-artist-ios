@@ -34,23 +34,20 @@ struct DrawView: View {
     @State private var strokes: [DrawStroke] = []
     @State private var undoStack: [[DrawStroke]] = [] // NEW: Undo history
     @State private var current: DrawStroke?
-    @State private var snapshotImage: UIImage?
-
     @State private var selectedColor: Color = .black
     @State private var lineWidth: CGFloat = 8
     @State private var isErasing: Bool = false
     @State private var showGrid: Bool = false
     @State private var showBrushPreview: Bool = true // NEW: Brush size preview
-    
+    @State private var showSavedAlert: Bool = false
+
     @State private var canvasSize: CGSize = .zero
-    @State private var kidName: String = ""
     @State private var showClearConfirmation: Bool = false // NEW: Clear confirmation
-    @State private var showShareSheet: Bool = false // NEW: Share functionality
-    
+
     @AppStorage("profileName") private var profileName: String = ""
     @AppStorage("userName") private var userName_fallback: String = ""
     @AppStorage("name") private var name_fallback: String = ""
-    
+
     @AppStorage("appLanguage") private var appLanguage: String = Locale.current.language.languageCode?.identifier ?? "en"
     private var selectedLocale: Locale { Locale(identifier: appLanguage) }
 
@@ -59,7 +56,7 @@ struct DrawView: View {
             .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
             .first { !$0.isEmpty } ?? ""
     }
-    
+
     // NEW: Can undo check
     private var canUndo: Bool {
         !undoStack.isEmpty
@@ -106,8 +103,11 @@ struct DrawView: View {
                     
                     Slider(value: $lineWidth, in: 2...30) {
                         Text(String(localized: "brush_label"))
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.7)
                     }
-                    .frame(maxWidth: 180)
+                    .frame(maxWidth: 160)
+                    .fixedSize(horizontal: false, vertical: true)
 
                     // NEW: Brush size preview
                     if showBrushPreview {
@@ -123,17 +123,23 @@ struct DrawView: View {
 
                     Toggle(isOn: $isErasing) {
                         Image(systemName: isErasing ? "eraser.fill" : "pencil.tip")
+                            .font(.title3)
                     }
                     .toggleStyle(.button)
+                    .frame(width: 44, height: 44)
                     .help("Toggle eraser")
 
-                    Toggle(String(localized: "grid_label"), isOn: $showGrid)
-                        .toggleStyle(.switch)
-                    
-                    TextField(String(localized: "child_name_placeholder"), text: $kidName)
-                        .textFieldStyle(.roundedBorder)
-                        .frame(maxWidth: 200)
-                        .submitLabel(.done)
+                    Button {
+                        showGrid.toggle()
+                    } label: {
+                        Image(systemName: showGrid ? "square.grid.3x3.fill" : "square.grid.3x3")
+                            .font(.title3)
+                            .symbolRenderingMode(.hierarchical)
+                            .frame(width: 44, height: 44)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.bordered)
+                    .help(String(localized: "grid_label"))
                 }
                 .padding(.horizontal)
 
@@ -159,38 +165,6 @@ struct DrawView: View {
                         onStrokeCompleted: { saveToUndoStack() } // NEW: Save undo state
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 16))
-                    .padding(16)
-                    
-                    // Profile name overlay
-                    HStack {
-                        if !displayProfileName.isEmpty {
-                            Text(displayProfileName)
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 6)
-                                .background(.ultraThinMaterial)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                                .padding([.top, .leading], 20)
-                        }
-                        Spacer()
-                    }
-                    .padding(16)
-                    
-                    // Kid name overlay
-                    VStack {
-                        Spacer()
-                        if !kidName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                            Text(kidName)
-                                .font(.system(size: 24, weight: .semibold, design: .rounded))
-                                .foregroundStyle(.primary)
-                                .padding(.horizontal, 12)
-                                .padding(.vertical, 6)
-                                .background(.ultraThinMaterial)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
-                                .padding(.bottom, 20)
-                        }
-                    }
                     .padding(16)
                 }
                 .padding(.horizontal)
@@ -222,16 +196,6 @@ struct DrawView: View {
 
                     Spacer()
                     
-                    // NEW: Share button
-                    Button {
-                        if let image = captureDrawing() {
-                            showShareSheet = true
-                        }
-                    } label: {
-                        Label(String(localized: "share_button", defaultValue: "Share"), systemImage: "square.and.arrow.up")
-                    }
-                    .disabled(strokes.isEmpty)
-
                     Button {
                         saveDrawing()
                     } label: {
@@ -245,41 +209,43 @@ struct DrawView: View {
                 ColorPaletteView(selectedColor: $selectedColor)
                     .padding(.top, 4)
 
-                Text(String(localized: "tip_text"))
-                    .font(.footnote)
-                    .foregroundStyle(.secondary)
-                    .padding(.bottom, 8)
             }
         }
-        .navigationTitle(template.name)
+        .navigationTitle(Text(template.localizedNameKey))
         .navigationBarTitleDisplayMode(.inline)
         .environment(\.locale, selectedLocale)
-        .sheet(isPresented: $showShareSheet) {
-            if let image = captureDrawing() {
-                ActivityView(activityItems: [image])
-            }
+        .alert("Saved to Gallery", isPresented: $showSavedAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Your drawing has been saved to the Gallery.")
         }
     }
     
     // MARK: - NEW: Undo/Redo Functions
     
     private func saveToUndoStack() {
+        // Avoid pushing duplicate consecutive states
+        if let last = undoStack.last, last == strokes { return }
         undoStack.append(strokes)
-        // Limit undo history to last 20 states
-        if undoStack.count > 20 {
-            undoStack.removeFirst()
-        }
+        if undoStack.count > 20 { undoStack.removeFirst() }
     }
     
     private func performUndo() {
         guard !undoStack.isEmpty else { return }
-        strokes = undoStack.removeLast()
+        // Remove current state snapshot
+        let _ = undoStack.removeLast()
+        // Restore previous snapshot if available, else clear
+        if let previous = undoStack.last {
+            strokes = previous
+        } else {
+            strokes.removeAll()
+        }
     }
     
     // MARK: - Drawing Capture & Save
     
     private func captureDrawing() -> UIImage? {
-        guard canvasSize != .zero else { return nil }
+        let targetSize: CGSize = canvasSize == .zero ? CGSize(width: UIScreen.main.bounds.width - 32, height: UIScreen.main.bounds.width * 1.2) : canvasSize
 
         let content = ZStack {
             RoundedRectangle(cornerRadius: 16)
@@ -298,38 +264,8 @@ struct DrawView: View {
             )
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .padding(16)
-            
-            HStack {
-                if !displayProfileName.isEmpty {
-                    Text(displayProfileName)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 6)
-                        .background(.ultraThinMaterial)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .padding([.top, .leading], 20)
-                }
-                Spacer()
-            }
-            .padding(16)
-            
-            VStack {
-                Spacer()
-                if !kidName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                    Text(kidName)
-                        .font(.system(size: 24, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.primary)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(.ultraThinMaterial)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .padding(.bottom, 20)
-                }
-            }
-            .padding(16)
         }
-        .frame(width: canvasSize.width, height: canvasSize.height)
+        .frame(width: targetSize.width, height: targetSize.height)
 
         let renderer = ImageRenderer(content: content)
         renderer.scale = UIScreen.main.scale
@@ -352,6 +288,8 @@ struct DrawView: View {
             imageData: png
         )
         modelContext.insert(saved)
+        try? modelContext.save()
+        showSavedAlert = true
     }
 }
 

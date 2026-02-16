@@ -2,12 +2,21 @@ import SwiftUI
 import Photos
 import UIKit
 
-struct DrawStroke: Identifiable {
+struct DrawStroke: Identifiable, Equatable {
     let id = UUID()
     var points: [CGPoint]
     var lineWidth: CGFloat
     var color: Color
     var isEraser: Bool = false
+
+    static func == (lhs: DrawStroke, rhs: DrawStroke) -> Bool {
+        // We intentionally ignore `id` for equality so identical strokes compare equal
+        // Compare points, line width, color, and eraser flag
+        lhs.points == rhs.points &&
+        lhs.lineWidth == rhs.lineWidth &&
+        lhs.color == rhs.color &&
+        lhs.isEraser == rhs.isEraser
+    }
 }
 
 struct DrawingCanvas: View {

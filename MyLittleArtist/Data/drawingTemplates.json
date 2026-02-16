@@ -1,98 +1,452 @@
 [
   {
-    "id": "circle-simple",
-    "name": "template.circle_simple.name",
-    "svgPath": "<circle cx=\"200\" cy=\"200\" r=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
-    "ageMin": 3,
-    "ageMax": 5,
-    "category": "shapes"
+    "id": "dog_sitting",
+    "name": "Dog (Sitting)",
+    "category": "animals",
+    "svgPath": "<path d=\"M 120 250 C 115 195 155 155 210 150 C 255 120 310 120 345 155 C 385 160 415 195 410 235 C 430 265 430 310 405 335 C 380 370 330 380 285 370 C 260 392 230 410 200 410 C 150 410 115 370 120 320 C 100 300 95 270 120 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 165 170 C 145 175 130 195 135 220 C 140 245 165 255 185 245 C 175 220 175 195 165 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 310 170 C 330 175 345 195 340 220 C 335 245 310 255 290 245 C 300 220 300 195 310 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240\" cy=\"245\" rx=\"55\" ry=\"38\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240\" cy=\"260\" rx=\"18\" ry=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"220\" cy=\"205\" r=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"265\" cy=\"205\" r=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 285 C 185 255 210 235 240 235 C 275 235 300 260 300 292 C 300 325 275 350 240 350 C 208 350 185 322 185 285 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 160 380 C 165 360 185 350 205 355 C 225 360 238 380 232 400 C 225 420 205 432 185 425 C 165 418 155 400 160 380 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 255 382 C 260 362 280 352 300 357 C 320 362 333 382 327 402 C 320 422 300 434 280 427 C 260 420 250 402 255 382 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 380 310 C 410 300 430 330 418 352 C 405 376 370 372 365 345 C 362 330 368 318 380 310 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 9,
+    "rasterPNGData": null
   },
   {
-    "id": "star-simple",
-    "name": "template.star_simple.name",
-    "svgPath": "<polygon points=\"200,50 230,140 325,140 250,195 275,290 200,235 125,290 150,195 75,140 170,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
-    "ageMin": 3,
-    "ageMax": 5,
-    "category": "shapes"
-  },
-  {
-    "id": "heart-simple",
-    "name": "template.heart_simple.name",
-    "svgPath": "<path d=\"M200,320 C200,320 50,200 50,130 C50,60 120,50 150,50 C180,50 200,80 200,100 C200,80 220,50 250,50 C280,50 350,60 350,130 C350,200 200,320 200,320 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
-    "ageMin": 3,
-    "ageMax": 5,
-    "category": "shapes"
-  },
-  {
-    "id": "sun-simple",
-    "name": "template.sun_simple.name",
-    "svgPath": "<circle cx=\"200\" cy=\"200\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"350\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"50\" y1=\"200\" x2=\"100\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"300\" y1=\"200\" x2=\"350\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"94\" y1=\"94\" x2=\"130\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"270\" y1=\"270\" x2=\"306\" y2=\"306\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"94\" y1=\"306\" x2=\"130\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"270\" y1=\"130\" x2=\"306\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"3\"/>",
-    "ageMin": 3,
-    "ageMax": 5,
-    "category": "nature"
-  },
-  {
-    "id": "butterfly",
-    "name": "template.butterfly.name",
-    "svgPath": "<ellipse cx=\"200\" cy=\"200\" rx=\"10\" ry=\"100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"140\" cy=\"160\" rx=\"60\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"260\" cy=\"160\" rx=\"60\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"150\" cy=\"260\" rx=\"40\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"250\" cy=\"260\" rx=\"40\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"80\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M185,65 Q170,40 160,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M215,65 Q230,40 240,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
+    "id": "cat_stretching",
+    "name": "Cat (Stretching)",
+    "category": "animals",
+    "svgPath": "<path d=\"M 70 255 C 85 210 125 185 175 190 C 210 155 270 150 305 190 C 340 195 365 220 365 255 C 365 300 325 330 280 330 C 240 355 185 355 150 330 C 110 325 80 300 70 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 215 C 135 190 155 170 182 170 C 205 160 230 160 245 175 C 268 175 285 190 282 212 C 275 240 245 255 210 250 C 180 255 150 240 140 215 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 175 C 160 165 160 150 172 142 C 182 150 188 160 190 175 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 238 175 C 248 165 248 150 236 142 C 226 150 220 160 218 175 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"190\" cy=\"205\" r=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"232\" cy=\"205\" r=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"211\" cy=\"225\" rx=\"12\" ry=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 330 270 C 360 260 380 285 370 305 C 360 330 322 328 315 305 C 310 290 318 276 330 270 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 125 320 C 130 305 145 295 162 300 C 178 305 190 320 186 338 C 182 355 165 366 148 360 C 132 354 120 338 125 320 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 230 322 C 235 307 250 297 267 302 C 283 307 295 322 291 340 C 287 357 270 368 253 362 C 237 356 225 340 230 322 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
     "ageMin": 5,
-    "ageMax": 8,
-    "category": "animals"
+    "ageMax": 10,
+    "rasterPNGData": null
   },
   {
-    "id": "flower",
-    "name": "template.flower.name",
-    "svgPath": "<circle cx=\"200\" cy=\"200\" r=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"120\" rx=\"30\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"280\" rx=\"30\" ry=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"120\" cy=\"200\" rx=\"50\" ry=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"280\" cy=\"200\" rx=\"50\" ry=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"143\" cy=\"143\" rx=\"30\" ry=\"50\" transform=\"rotate(-45 143 143)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"257\" cy=\"143\" rx=\"30\" ry=\"50\" transform=\"rotate(45 257 143)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"143\" cy=\"257\" rx=\"30\" ry=\"50\" transform=\"rotate(45 143 257)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"257\" cy=\"257\" rx=\"30\" ry=\"50\" transform=\"rotate(-45 257 257)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"200\" y1=\"330\" x2=\"200\" y2=\"380\" stroke=\"currentColor\" stroke-width=\"4\"/>",
+    "id": "lion",
+    "name": "Lion",
+    "category": "animals",
+    "svgPath": "<path d=\"M 120 210 C 120 150 175 110 240 115 C 280 90 335 95 365 130 C 410 135 445 175 440 225 C 465 255 465 300 440 330 C 420 370 375 390 325 380 C 295 405 255 420 215 415 C 160 410 120 365 125 310 C 100 285 95 245 120 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 165 235 C 165 195 200 170 240 170 C 285 170 320 200 320 242 C 320 290 285 320 240 320 C 195 320 165 290 165 235 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"220\" cy=\"225\" r=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"260\" cy=\"225\" r=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240\" cy=\"255\" rx=\"22\" ry=\"14\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 230 265 C 236 275 244 275 250 265 C 250 288 230 288 230 265 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 330 C 190 315 210 305 240 305 C 280 305 310 320 325 345 C 350 385 340 430 310 450 C 285 470 195 470 170 450 C 140 430 135 380 175 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 340 400 C 370 392 388 418 375 438 C 360 460 332 450 328 428 C 325 415 330 405 340 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 440 C 178 425 192 415 208 418 C 224 422 236 438 232 454 C 228 470 212 480 196 476 C 180 472 172 456 175 440 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 248 440 C 251 425 265 415 281 418 C 297 422 309 438 305 454 C 301 470 285 480 269 476 C 253 472 245 456 248 440 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "elephant",
+    "name": "Elephant",
+    "category": "animals",
+    "svgPath": "<path d=\"M 80 265 C 85 210 125 175 180 170 C 215 135 270 125 310 150 C 340 140 375 150 392 175 C 430 185 455 220 450 260 C 448 330 400 365 330 365 C 300 392 260 410 215 410 C 150 410 95 365 90 300 C 75 290 70 278 80 265 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 165 210 C 135 215 115 240 120 270 C 125 310 165 330 205 315 C 195 285 195 240 205 215 C 190 208 178 208 165 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"195\" cy=\"235\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 255 C 255 270 270 295 268 320 C 265 350 235 355 230 335 C 226 320 242 315 250 325 C 255 333 248 342 238 342 C 220 342 210 328 208 312 C 205 285 190 270 170 260 C 185 248 205 245 225 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"140\" y=\"330\" width=\"60\" height=\"75\" rx=\"18\" ry=\"18\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"215\" y=\"335\" width=\"60\" height=\"70\" rx=\"18\" ry=\"18\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"295\" y=\"330\" width=\"65\" height=\"75\" rx=\"18\" ry=\"18\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 300 C 175 270 200 250 235 250 C 270 250 295 270 295 305 C 295 340 270 360 235 360 C 205 360 175 335 175 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
     "ageMin": 5,
-    "ageMax": 8,
-    "category": "nature"
-  },
-  {
-    "id": "house",
-    "name": "template.house.name",
-    "svgPath": "<rect x=\"100\" y=\"180\" width=\"200\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"200,60 80,180 320,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"160\" y=\"280\" width=\"80\" height=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"120\" y=\"220\" width=\"50\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"230\" y=\"220\" width=\"50\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"260\" y=\"100\" width=\"30\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
-    "ageMin": 5,
-    "ageMax": 8,
-    "category": "buildings"
-  },
-  {
-    "id": "fish",
-    "name": "template.fish.name",
-    "svgPath": "<ellipse cx=\"180\" cy=\"200\" rx=\"120\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"300,200 380,140 380,260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"180\" r=\"15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M60,200 Q100,230 140,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M180,130 Q200,100 220,130\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"180\" y1=\"180\" x2=\"180\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"175\" x2=\"220\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"260\" y1=\"180\" x2=\"260\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/>",
-    "ageMin": 5,
-    "ageMax": 8,
-    "category": "animals"
-  },
-  {
-    "id": "unicorn",
-    "name": "template.unicorn.name",
-    "svgPath": "<ellipse cx=\"200\" cy=\"250\" rx=\"100\" ry=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"140\" cy=\"170\" rx=\"50\" ry=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"140,110 160,50 120,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"160\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"100\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"150\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"250\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"300\" cy=\"320\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M300,250 Q350,240 380,280 Q350,260 340,290 Q330,260 310,280\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M100,180 Q60,170 50,200 Q70,190 80,210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
-    "ageMin": 8,
     "ageMax": 11,
-    "category": "fantasy"
+    "rasterPNGData": null
+  },
+  {
+    "id": "giraffe",
+    "name": "Giraffe",
+    "category": "animals",
+    "svgPath": "<path d=\"M 135 320 C 135 260 175 225 230 225 C 260 205 295 205 320 225 C 360 230 385 260 385 300 C 385 355 350 385 295 390 C 270 410 235 420 205 415 C 165 410 135 375 135 320 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 110 C 270 110 292 130 292 160 L 292 235 C 292 255 270 270 250 270 C 230 270 210 255 210 235 L 210 160 C 210 130 220 110 240 110 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 230 80 C 255 65 290 70 305 95 C 320 115 312 140 290 150 C 275 158 250 158 232 145 C 210 130 208 95 230 80 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"245\" y=\"45\" width=\"12\" height=\"35\" rx=\"6\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"278\" y=\"48\" width=\"12\" height=\"32\" rx=\"6\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"285\" cy=\"110\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"305\" cy=\"125\" rx=\"10\" ry=\"7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"170\" y=\"380\" width=\"36\" height=\"55\" rx=\"12\" ry=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"220\" y=\"382\" width=\"36\" height=\"53\" rx=\"12\" ry=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 295 C 185 280 205 285 210 305 C 215 325 195 338 178 330 C 160 322 158 305 170 295 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 255 300 C 270 290 290 300 290 318 C 290 338 270 348 255 340 C 240 332 240 310 255 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "monkey",
+    "name": "Monkey",
+    "category": "animals",
+    "svgPath": "<path d=\"M 145 210 C 145 165 180 135 225 140 C 250 125 280 125 300 140 C 345 145 375 175 375 220 C 375 270 340 305 290 305 C 265 320 235 320 210 305 C 170 300 145 265 145 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 220 C 185 195 205 180 230 180 C 260 180 280 200 280 228 C 280 260 258 280 230 280 C 205 280 185 255 185 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 135 220 C 118 210 118 185 135 175 C 150 190 155 205 150 225 C 145 235 140 235 135 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 385 220 C 402 210 402 185 385 175 C 370 190 365 205 370 225 C 375 235 380 235 385 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"215\" cy=\"205\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"245\" cy=\"205\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"230\" cy=\"235\" rx=\"10\" ry=\"7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 305 C 190 285 210 275 230 275 C 260 275 285 292 300 320 C 320 360 310 405 280 425 C 255 440 205 440 180 425 C 150 405 150 350 175 305 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 310 360 C 345 350 365 380 350 403 C 335 428 300 418 298 392 C 296 375 302 365 310 360 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 415 C 188 405 198 398 210 400 C 224 403 232 415 230 428 C 228 440 216 448 203 446 C 190 444 182 428 185 415 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 250 415 C 253 405 263 398 275 400 C 289 403 297 415 295 428 C 293 440 281 448 268 446 C 255 444 247 428 250 415 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "panda",
+    "name": "Panda",
+    "category": "animals",
+    "svgPath": "<path d=\"M 150 220 C 150 175 185 145 230 150 C 250 135 275 135 295 150 C 340 150 370 180 370 225 C 370 270 340 305 295 305 C 275 318 250 318 230 305 C 185 305 150 270 150 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 155 C 165 135 175 120 195 120 C 210 125 220 140 215 160 C 200 165 185 165 175 155 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 315 155 C 325 135 315 120 295 120 C 280 125 270 140 275 160 C 290 165 305 165 315 155 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 205 205 C 205 190 215 178 230 178 C 245 178 255 190 255 208 C 255 228 242 238 228 235 C 214 232 205 220 205 205 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 265 205 C 265 190 275 178 290 178 C 305 178 315 190 315 208 C 315 228 302 238 288 235 C 274 232 265 220 265 205 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"230\" cy=\"205\" r=\"3\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"290\" cy=\"205\" r=\"3\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"260\" cy=\"235\" rx=\"14\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 180 305 C 195 285 215 275 240 275 C 270 275 295 292 310 320 C 330 360 325 410 295 430 C 270 445 210 445 185 430 C 155 410 155 350 180 305 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 345 C 200 330 215 320 235 320 C 255 320 270 332 275 350 C 280 372 265 390 240 390 C 215 390 190 372 195 345 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 180 400 C 170 380 185 360 205 365 C 220 375 225 395 215 410 C 205 420 187 415 180 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 300 400 C 310 380 295 360 275 365 C 260 375 255 395 265 410 C 275 420 293 415 300 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "bunny",
+    "name": "Bunny",
+    "category": "animals",
+    "svgPath": "<path d=\"M 165 240 C 160 200 185 170 225 170 C 240 150 265 150 280 170 C 320 172 345 205 340 245 C 360 270 360 305 340 330 C 320 360 285 378 250 372 C 235 390 215 400 195 400 C 160 400 135 370 140 335 C 125 320 120 300 130 280 C 138 262 150 250 165 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 205 170 C 185 130 185 95 200 70 C 225 90 235 125 230 165 C 225 175 215 178 205 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 275 170 C 295 130 295 95 280 70 C 255 90 245 125 250 165 C 255 175 265 178 275 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 205 160 C 195 130 198 105 210 88 C 222 103 228 128 224 158 C 220 165 212 167 205 160 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 275 160 C 285 130 282 105 270 88 C 258 103 252 128 256 158 C 260 165 268 167 275 160 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"225\" cy=\"230\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"275\" cy=\"230\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"250\" cy=\"255\" rx=\"10\" ry=\"7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 244 262 C 250 270 250 270 256 262 C 256 278 244 278 244 262 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 365 C 178 350 192 340 208 343 C 224 346 236 362 232 378 C 228 394 212 404 196 400 C 180 396 172 380 175 365 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 260 365 C 263 350 277 340 293 343 C 309 346 321 362 317 378 C 313 394 297 404 281 400 C 265 396 257 380 260 365 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 330 320 C 345 315 360 330 352 345 C 344 360 325 360 318 346 C 312 334 318 324 330 320 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "category": "animals",
+    "svgPath": "<path d=\"M 150 220 C 150 175 185 145 230 150 C 250 135 275 135 295 150 C 340 145 370 175 370 225 C 370 275 335 310 285 310 C 265 325 240 325 220 310 C 175 305 150 270 150 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 155 C 175 135 185 120 205 120 C 225 130 230 150 215 165 C 205 170 195 168 185 155 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 315 155 C 325 135 315 120 295 120 C 275 130 270 150 285 165 C 295 170 305 168 315 155 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 240 C 200 215 220 200 245 200 C 275 200 295 220 295 245 C 295 275 272 290 245 290 C 220 290 200 268 200 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"245\" cy=\"245\" rx=\"12\" ry=\"9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"225\" cy=\"215\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"265\" cy=\"215\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 310 C 195 285 220 275 245 275 C 280 275 305 292 320 320 C 345 365 335 420 300 440 C 270 458 220 458 190 440 C 155 420 150 360 175 310 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 420 C 188 405 202 395 218 398 C 234 402 246 418 242 434 C 238 450 222 460 206 456 C 190 452 182 436 185 420 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 250 420 C 253 405 267 395 283 398 C 299 402 311 418 307 434 C 303 450 287 460 271 456 C 255 452 247 436 250 420 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "fox",
+    "name": "Fox",
+    "category": "animals",
+    "svgPath": "<path d=\"M 130 210 C 130 165 165 135 210 140 C 235 120 275 120 300 140 C 345 135 380 165 380 210 C 380 255 350 292 305 305 C 285 325 260 338 235 338 C 210 338 185 325 165 305 C 140 292 130 255 130 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 165 170 C 150 150 150 125 170 112 C 190 135 195 155 190 178 C 182 182 173 180 165 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 345 170 C 360 150 360 125 340 112 C 320 135 315 155 320 178 C 328 182 337 180 345 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 180 235 C 180 205 205 185 235 185 C 270 185 295 205 295 240 C 295 280 270 305 235 305 C 205 305 180 275 180 235 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"220\" cy=\"215\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"255\" cy=\"215\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"270\" cy=\"250\" rx=\"12\" ry=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 260 255 C 266 263 274 263 280 255 C 280 270 260 270 260 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 300 345 C 340 330 375 360 362 392 C 350 420 315 425 295 405 C 280 390 282 365 300 345 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "turtle",
+    "name": "Turtle",
+    "category": "animals",
+    "svgPath": "<path d=\"M 70 240 C 90 160 170 120 240 130 C 290 105 350 120 370 170 C 395 195 405 230 395 265 C 380 330 310 365 240 355 C 170 365 95 330 75 270 C 68 260 65 250 70 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 240 C 132 190 185 165 240 172 C 295 165 348 190 360 240 C 368 290 318 320 240 318 C 162 320 112 290 120 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 365 235 C 390 215 420 225 430 250 C 420 280 390 290 368 275 C 355 265 355 245 365 235 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"402\" cy=\"246\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 160 C 120 155 95 175 95 205 C 105 230 135 235 155 220 C 162 200 160 178 150 160 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 330 C 120 335 95 360 100 390 C 120 410 150 405 168 385 C 172 365 165 345 150 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 245 350 C 235 375 250 400 278 405 C 305 400 318 372 305 350 C 285 338 262 338 245 350 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 245 150 C 235 125 250 100 278 95 C 305 100 318 128 305 150 C 285 162 262 162 245 150 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 70 260 C 50 255 42 275 52 288 C 62 300 80 292 82 275 C 80 268 76 263 70 260 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "dolphin",
+    "name": "Dolphin",
+    "category": "animals",
+    "svgPath": "<path d=\"M 55 240 C 95 185 165 155 240 165 C 295 172 350 198 370 235 C 380 255 372 275 350 285 C 320 300 290 315 265 340 C 240 365 205 372 170 360 C 125 345 95 305 100 265 C 102 248 118 240 135 238 C 110 225 82 228 55 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 210 175 C 230 145 265 140 282 165 C 255 170 235 185 225 205 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 95 268 C 70 258 52 235 62 215 C 82 220 100 235 108 255 C 112 268 104 273 95 268 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 305 252 C 330 238 352 252 350 272 C 330 275 315 285 306 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"265\" cy=\"230\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "owl",
+    "name": "Owl",
+    "category": "animals",
+    "svgPath": "<path d=\"M 140 250 C 140 185 185 150 240 150 C 295 150 340 185 340 250 C 340 315 305 360 240 360 C 175 360 140 315 140 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 155 230 C 155 185 190 160 240 160 C 290 160 325 185 325 230 C 325 285 290 310 240 310 C 190 310 155 285 155 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 230 C 185 205 205 190 230 190 C 255 190 270 208 270 232 C 270 258 252 272 230 270 C 205 268 185 252 185 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 250 230 C 250 205 270 190 295 190 C 320 190 335 208 335 232 C 335 258 317 272 295 270 C 270 268 250 252 250 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"230\" cy=\"230\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"295\" cy=\"230\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 260 255 L 245 280 L 275 280 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 260 C 120 250 110 270 118 292 C 130 315 155 318 170 302 C 165 285 155 270 140 260 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 340 260 C 360 250 370 270 362 292 C 350 315 325 318 310 302 C 315 285 325 270 340 260 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"215\" y=\"350\" width=\"18\" height=\"35\" rx=\"7\" ry=\"7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"250\" y=\"350\" width=\"18\" height=\"35\" rx=\"7\" ry=\"7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "penguin",
+    "name": "Penguin",
+    "category": "animals",
+    "svgPath": "<path d=\"M 160 260 C 160 185 200 140 240 140 C 280 140 320 185 320 260 C 320 335 290 370 240 370 C 190 370 160 335 160 260 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 190 280 C 190 235 210 210 240 210 C 270 210 290 235 290 280 C 290 325 270 350 240 350 C 210 350 190 325 190 280 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"225\" cy=\"200\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"255\" cy=\"200\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 210 L 225 230 L 255 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 160 290 C 135 300 130 330 150 350 C 170 365 190 350 195 330 C 185 310 175 295 160 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 320 290 C 345 300 350 330 330 350 C 310 365 290 350 285 330 C 295 310 305 295 320 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 370 C 205 350 220 340 240 340 C 260 340 275 350 280 370 C 260 388 220 388 200 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "horse",
+    "name": "Horse",
+    "category": "animals",
+    "svgPath": "<path d=\"M 120 270 C 120 215 160 180 210 180 C 235 155 270 150 300 170 C 330 170 355 190 365 215 C 390 230 400 260 392 290 C 380 335 340 360 295 360 C 265 388 235 400 205 395 C 160 390 125 350 125 300 C 110 290 110 280 120 270 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 235 155 C 235 120 260 95 292 100 C 320 105 335 132 325 155 C 318 170 300 180 278 178 C 260 176 245 170 235 155 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 285 105 C 275 85 280 70 295 62 C 308 75 312 90 305 110 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 220 175 C 195 185 185 210 195 235 C 210 265 195 290 170 305 C 155 260 160 215 190 190 C 205 180 212 178 220 175 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"300\" cy=\"132\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"160\" y=\"330\" width=\"28\" height=\"60\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"205\" y=\"332\" width=\"28\" height=\"58\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 355 275 C 390 285 392 330 360 350 C 335 365 315 340 330 320 C 345 300 345 288 355 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "suv_side",
+    "name": "SUV (Side View)",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 70 250 C 80 220 110 205 145 205 L 185 175 C 205 160 230 152 255 152 L 305 152 C 330 152 350 165 365 185 L 390 215 C 410 220 430 235 430 260 L 430 295 C 430 315 415 330 395 330 L 105 330 C 85 330 70 315 70 295 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 190 L 255 190 L 255 215 L 180 215 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 260 190 L 330 190 L 350 215 L 260 215 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 125 330 C 125 300 150 275 180 275 C 210 275 235 300 235 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 285 330 C 285 300 310 275 340 275 C 370 275 395 300 395 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"180\" cy=\"330\" r=\"28\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"340\" cy=\"330\" r=\"28\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"180\" cy=\"330\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"340\" cy=\"330\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"85\" y=\"255\" width=\"32\" height=\"20\" rx=\"8\" ry=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"388\" y=\"255\" width=\"30\" height=\"20\" rx=\"8\" ry=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "race_car",
+    "name": "Race Car",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 70 285 C 90 240 140 225 200 225 L 240 190 C 270 165 320 165 350 190 L 375 210 L 405 225 C 430 238 440 250 440 270 L 440 300 C 440 320 425 335 405 335 L 105 335 C 85 335 70 320 70 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 245 205 C 265 182 305 182 325 205 L 340 225 L 240 225 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 335 C 120 310 140 290 165 290 C 190 290 210 310 210 335 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 300 335 C 300 310 320 290 345 290 C 370 290 390 310 390 335 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"165\" cy=\"335\" r=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"345\" cy=\"335\" r=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"165\" cy=\"335\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"345\" cy=\"335\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"430\" y=\"245\" width=\"22\" height=\"18\" rx=\"6\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "fire_truck",
+    "name": "Fire Truck",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 60 250 C 60 225 80 205 105 205 L 155 205 L 190 180 C 205 170 220 165 235 165 L 330 165 C 350 165 365 175 375 190 L 395 215 L 425 215 C 440 215 450 225 450 240 L 450 300 C 450 320 435 335 415 335 L 95 335 C 75 335 60 320 60 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 200 L 230 200 L 230 230 L 135 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"230\" y=\"175\" width=\"150\" height=\"18\" rx=\"8\" ry=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"240\" y=\"150\" width=\"130\" height=\"18\" rx=\"8\" ry=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"265\" y=\"235\" width=\"40\" height=\"32\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"312\" y=\"235\" width=\"40\" height=\"32\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"359\" y=\"235\" width=\"40\" height=\"32\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"135\" cy=\"335\" r=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"285\" cy=\"335\" r=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"405\" cy=\"335\" r=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"135\" cy=\"335\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"285\" cy=\"335\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"405\" cy=\"335\" r=\"9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"310\" y=\"140\" width=\"55\" height=\"18\" rx=\"9\" ry=\"9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "police_car",
+    "name": "Police Car",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 70 265 C 80 235 105 220 135 220 L 170 190 C 195 170 220 162 250 162 L 300 162 C 330 162 350 175 365 195 L 390 220 C 420 225 440 240 440 265 L 440 300 C 440 320 425 335 405 335 L 105 335 C 85 335 70 320 70 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 205 L 250 205 L 250 230 L 170 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 255 205 L 330 205 L 350 230 L 255 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"165\" cy=\"335\" r=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"345\" cy=\"335\" r=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"165\" cy=\"335\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"345\" cy=\"335\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"255\" y=\"140\" width=\"65\" height=\"18\" rx=\"9\" ry=\"9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 250 255 C 270 245 290 245 310 255 C 295 285 265 285 250 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 11,
+    "rasterPNGData": null
+  },
+  {
+    "id": "airplane",
+    "name": "Airplane",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 60 240 C 140 220 210 210 240 210 C 270 210 340 220 420 240 L 420 275 C 340 295 270 305 240 305 C 210 305 140 295 60 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 210 L 285 120 L 320 130 L 290 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 305 L 290 395 L 320 385 L 285 295 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 210 235 C 220 220 235 215 255 215 C 275 215 290 220 300 235 C 290 255 275 265 255 265 C 235 265 220 255 210 235 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 410 240 L 460 225 L 460 290 L 410 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "helicopter",
+    "name": "Helicopter",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 80 250 C 90 220 120 200 160 200 L 270 200 C 315 200 350 230 350 270 C 350 315 315 340 270 340 L 150 340 C 105 340 80 315 80 280 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 220 C 155 205 180 198 210 198 C 245 198 275 210 290 230 C 275 252 245 262 210 262 C 175 262 150 252 140 235 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 350 260 L 455 260 L 455 290 L 350 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 455 265 L 485 252 L 485 298 L 455 285 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 110 350 L 320 350 L 330 365 L 100 365 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 340 L 130 365 L 150 365 L 160 340 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 285 340 L 275 365 L 295 365 L 305 340 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 215 165 L 225 165 L 225 200 L 215 200 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 150 L 320 150 L 330 160 L 110 160 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 215 120 L 225 120 L 225 190 L 215 190 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "sailboat",
+    "name": "Sailboat",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 80 340 C 120 365 320 365 360 340 L 390 315 L 50 315 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 220 120 L 228 120 L 228 315 L 220 315 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 224 140 L 340 300 L 224 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 224 170 L 140 300 L 224 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 315 C 170 295 270 295 290 315 C 270 335 170 335 150 315 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "submarine",
+    "name": "Submarine",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 70 260 C 90 220 135 200 190 200 L 310 200 C 360 200 395 215 420 240 C 445 250 455 265 455 280 C 455 305 435 325 405 330 L 190 330 C 135 330 90 310 70 280 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 210 170 L 290 170 L 305 200 L 195 200 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 245 170 C 260 160 275 160 290 170 C 280 185 260 185 245 170 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"265\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"265\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"250\" cy=\"265\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"290\" cy=\"265\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 455 255 L 485 245 L 485 315 L 455 305 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 440 265 L 455 265 L 455 295 L 440 295 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
   },
   {
     "id": "rocket",
-    "name": "Space Rocket",
-    "svgPath": "<path d=\"M200,50 Q250,100 250,200 L250,300 L200,350 L150,300 L150,200 Q150,100 200,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"180\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"150,280 100,340 150,320\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"250,280 300,340 250,320\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M180,350 Q170,380 160,390\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M200,350 Q200,390 200,400\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M220,350 Q230,380 240,390\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"175\" y=\"220\" width=\"50\" height=\"40\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
-    "ageMin": 8,
-    "ageMax": 11,
-    "category": "vehicles"
+    "name": "Rocket",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 240 70 C 285 110 310 170 310 235 C 310 300 285 345 240 370 C 195 345 170 300 170 235 C 170 170 195 110 240 70 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 115 C 265 140 270 170 255 195 C 240 220 200 220 185 195 C 170 170 175 140 200 115 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"240\" cy=\"195\" r=\"28\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 255 L 130 295 L 170 310 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 310 255 L 350 295 L 310 310 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 210 370 C 225 395 235 405 240 405 C 245 405 255 395 270 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 236 120 L 244 120 L 244 165 L 236 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
   },
   {
-    "id": "dragon",
-    "name": "template.dragon.name",
-    "svgPath": "<ellipse cx=\"200\" cy=\"220\" rx=\"120\" ry=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"120\" cy=\"150\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"105\" cy=\"140\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M80,170 Q60,180 70,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"90,110 70,70 100,100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"130,100 140,60 160,90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M320,220 Q360,200 380,220 Q360,240 380,260 Q360,280 340,260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"140\" cy=\"300\" rx=\"20\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"300\" rx=\"20\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><ellipse cx=\"260\" cy=\"300\" rx=\"20\" ry=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M100,180 Q80,200 80,220 Q60,200 80,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
-    "ageMin": 8,
-    "ageMax": 11,
-    "category": "fantasy"
+    "id": "train_engine",
+    "name": "Train Engine",
+    "category": "vehicles",
+    "svgPath": "<path d=\"M 80 250 C 80 220 105 195 140 195 L 310 195 C 345 195 370 220 370 250 L 370 315 C 370 345 345 370 315 370 L 135 370 C 105 370 80 345 80 315 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 150 L 240 150 L 255 195 L 105 195 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 135 165 L 210 165 L 210 195 L 125 195 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 300 150 L 330 150 L 330 195 L 300 195 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"95\" y=\"250\" width=\"70\" height=\"55\" rx=\"16\" ry=\"16\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"140\" cy=\"370\" r=\"24\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"230\" cy=\"370\" r=\"24\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"320\" cy=\"370\" r=\"24\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"140\" cy=\"370\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"230\" cy=\"370\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"320\" cy=\"370\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 80 325 L 370 325 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "tree_leafy",
+    "name": "Leafy Tree",
+    "category": "nature",
+    "svgPath": "<path d=\"M 95 230 C 95 175 145 135 210 145 C 235 120 265 120 290 145 C 345 150 385 185 380 235 C 410 255 410 300 382 322 C 360 355 320 370 280 360 C 255 382 225 390 195 382 C 140 372 105 335 110 285 C 90 270 85 250 95 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 220 250 C 245 250 265 270 265 295 L 265 370 L 175 370 L 175 295 C 175 270 195 250 220 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 190 370 C 175 360 155 360 140 372 C 155 388 175 392 190 385 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 250 370 C 265 360 285 360 300 372 C 285 388 265 392 250 385 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"155\" cy=\"235\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"200\" cy=\"205\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"255\" cy=\"210\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"310\" cy=\"240\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "palm_tree",
+    "name": "Palm Tree",
+    "category": "nature",
+    "svgPath": "<path d=\"M 225 165 C 245 165 260 180 258 205 L 245 370 L 195 370 L 182 205 C 180 180 205 165 225 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 165 C 185 145 145 140 110 150 C 140 175 180 185 225 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 165 C 265 145 305 140 340 150 C 310 175 270 185 225 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 165 C 235 120 265 90 305 80 C 290 125 265 155 225 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 165 C 215 120 185 90 145 80 C 160 125 185 155 225 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"195\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"225\" cy=\"195\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"240\" cy=\"195\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 370 C 160 350 290 350 330 370 C 290 392 160 392 120 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "mountain_scene",
+    "name": "Mountain Scene",
+    "category": "nature",
+    "svgPath": "<path d=\"M 60 370 L 170 190 L 280 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 180 370 L 270 230 L 390 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 145 230 L 170 190 L 195 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 255 265 L 270 230 L 290 265 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 95 370 C 120 345 160 345 185 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 230 370 C 255 345 320 345 345 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"330\" cy=\"90\" r=\"28\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 90 120 C 90 100 110 90 130 95 C 140 80 165 75 185 90 C 205 85 225 95 225 115 C 225 135 210 150 190 150 L 120 150 C 105 150 90 135 90 120 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "rainbow",
+    "name": "Rainbow",
+    "category": "nature",
+    "svgPath": "<path d=\"M 80 320 C 80 190 150 110 240 110 C 330 110 400 190 400 320 L 360 320 C 360 215 310 150 240 150 C 170 150 120 215 120 320 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 320 C 120 210 175 145 240 145 C 305 145 360 210 360 320 L 330 320 C 330 230 290 180 240 180 C 190 180 150 230 150 320 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 320 C 150 235 195 190 240 190 C 285 190 330 235 330 320 L 300 320 C 300 255 275 225 240 225 C 205 225 180 255 180 320 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 70 330 C 70 312 85 300 103 303 C 112 290 132 288 145 300 C 162 297 175 310 175 326 C 175 342 162 355 145 355 L 100 355 C 83 355 70 345 70 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 305 330 C 305 312 320 300 338 303 C 347 290 367 288 380 300 C 397 297 410 310 410 326 C 410 342 397 355 380 355 L 335 355 C 318 355 305 345 305 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 8,
+    "rasterPNGData": null
+  },
+  {
+    "id": "sun_rays",
+    "name": "Sun with Rays",
+    "category": "nature",
+    "svgPath": "<circle cx=\"240\" cy=\"220\" r=\"65\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 330.0 220.0 L 362.0 247.3 L 362.0 192.7 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 317.9 265.0 L 332.0 304.6 L 359.3 257.4 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 285.0 297.9 L 277.4 339.3 L 324.6 312.0 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240.0 310.0 L 212.7 342.0 L 267.3 342.0 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195.0 297.9 L 155.4 312.0 L 202.6 339.3 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 162.1 265.0 L 120.7 257.4 L 148.0 304.6 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150.0 220.0 L 118.0 192.7 L 118.0 247.3 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 162.1 175.0 L 148.0 135.4 L 120.7 182.6 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195.0 142.1 L 202.6 100.7 L 155.4 128.0 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240.0 130.0 L 267.3 98.0 L 212.7 98.0 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 285.0 142.1 L 324.6 128.0 L 277.4 100.7 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 317.9 175.0 L 359.3 182.6 L 332.0 135.4 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"220\" cy=\"205\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"260\" cy=\"205\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 220 245 C 232 255 248 255 260 245 C 250 268 230 268 220 245 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "cloud_rain",
+    "name": "Cloud with Rain",
+    "category": "nature",
+    "svgPath": "<path d=\"M 95 205 C 95 180 115 165 140 170 C 155 145 185 135 215 145 C 240 130 275 140 290 165 C 320 160 345 180 345 210 C 345 240 322 260 295 260 L 130 260 C 110 260 95 240 95 205 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 275 C 140 295 144 320 150 330 C 156 320 160 295 150 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 275 C 190 295 194 320 200 330 C 206 320 210 295 200 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 250 275 C 240 295 244 320 250 330 C 256 320 260 295 250 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 300 275 C 290 295 294 320 300 330 C 306 320 310 295 300 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "flower",
+    "name": "Flower",
+    "category": "nature",
+    "svgPath": "<circle cx=\"240\" cy=\"210\" r=\"28\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"295.0\" cy=\"210.0\" rx=\"38\" ry=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"267.5\" cy=\"257.6313972081441\" rx=\"38\" ry=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"212.5\" cy=\"257.6313972081441\" rx=\"38\" ry=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"185.0\" cy=\"210.0\" rx=\"38\" ry=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"212.49999999999997\" cy=\"162.3686027918559\" rx=\"38\" ry=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"267.5\" cy=\"162.3686027918559\" rx=\"38\" ry=\"26\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 238 240 L 242 240 L 242 370 L 238 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 305 C 205 295 180 305 165 330 C 195 345 220 345 240 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 330 C 275 320 300 330 315 355 C 285 370 260 370 240 355 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "category": "nature",
+    "svgPath": "<circle cx=\"240\" cy=\"200\" r=\"34\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"315.0\" cy=\"200.0\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"304.9519052838329\" cy=\"237.5\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"277.5\" cy=\"264.9519052838329\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240.0\" cy=\"275.0\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"202.5\" cy=\"264.9519052838329\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"175.0480947161671\" cy=\"237.5\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"165.0\" cy=\"200.0\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"175.0480947161671\" cy=\"162.5\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"202.49999999999997\" cy=\"135.04809471616713\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240.0\" cy=\"125.0\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"277.5\" cy=\"135.0480947161671\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"304.95190528383284\" cy=\"162.49999999999997\" rx=\"42\" ry=\"22\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 238 235 L 242 235 L 242 370 L 238 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 315 C 205 305 180 315 165 340 C 195 355 220 355 240 340 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "mushroom",
+    "name": "Mushroom",
+    "category": "nature",
+    "svgPath": "<path d=\"M 80 230 C 110 150 170 115 240 115 C 310 115 370 150 400 230 C 330 270 150 270 80 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 230 C 170 205 200 190 240 190 C 280 190 310 205 310 230 C 280 250 200 250 170 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 230 C 185 260 185 300 205 330 C 220 355 260 355 275 330 C 295 300 295 260 285 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 180 355 C 205 340 275 340 300 355 C 275 372 205 372 180 355 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"175\" cy=\"185\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"240\" cy=\"170\" r=\"9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"305\" cy=\"188\" r=\"11\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"245\" cy=\"205\" r=\"8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "volcano",
+    "name": "Volcano",
+    "category": "nature",
+    "svgPath": "<path d=\"M 80 370 L 155 185 L 190 230 L 240 170 L 290 230 L 325 185 L 400 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 230 C 195 170 220 140 240 125 C 260 140 285 170 310 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 60 C 270 95 295 130 290 160 C 285 190 255 200 240 185 C 225 200 195 190 190 160 C 185 130 210 95 240 60 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 205 250 C 205 280 230 300 240 330 C 250 300 275 280 275 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
   },
   {
     "id": "castle",
-    "name": "template.castle.name",
-    "svgPath": "<rect x=\"120\" y=\"200\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"80\" y=\"140\" width=\"60\" height=\"220\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"260\" y=\"140\" width=\"60\" height=\"220\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"110,140 80,80 140,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><polygon points=\"290,140 260,80 320,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"170\" y=\"280\" width=\"60\" height=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><rect x=\"150\" y=\"220\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"210\" y=\"220\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"85\" y=\"180\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"285\" y=\"180\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"180\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/>",
-    "ageMin": 8,
+    "name": "Castle",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 80 360 L 80 175 L 115 175 L 115 145 L 145 145 L 145 175 L 185 175 L 185 140 L 220 140 L 220 175 L 260 175 L 260 145 L 290 145 L 290 175 L 330 175 L 330 145 L 360 145 L 360 175 L 400 175 L 400 360 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 155 360 L 155 260 C 155 235 175 220 200 220 C 225 220 245 235 245 260 L 245 360 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 110 235 C 120 220 140 220 150 235 L 150 265 C 140 280 120 280 110 265 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 305 235 C 315 220 335 220 345 235 L 345 265 C 335 280 315 280 305 265 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 215 190 C 225 175 255 175 265 190 L 265 215 C 255 230 225 230 215 215 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 100 120 L 100 145 L 125 135 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 380 120 L 380 145 L 355 135 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "unicorn",
+    "name": "Unicorn",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 95 280 C 105 230 145 200 195 200 C 220 175 255 170 290 185 C 325 185 350 205 360 230 C 385 245 392 275 380 300 C 360 345 320 365 275 360 C 250 382 220 395 190 390 C 145 385 110 350 110 305 C 92 300 85 292 95 280 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 195 C 190 155 215 130 250 130 C 280 125 305 145 305 175 C 305 205 280 225 245 220 C 220 220 205 212 195 195 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 255 95 L 290 145 L 245 150 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 230 130 C 220 110 225 95 242 88 C 255 98 260 115 252 135 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 210 C 175 220 165 245 175 270 C 190 300 175 325 150 340 C 135 295 140 250 170 225 C 185 215 192 212 200 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 355 285 C 390 300 392 345 360 360 C 335 372 315 350 330 330 C 345 310 345 298 355 285 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"150\" y=\"335\" width=\"26\" height=\"55\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"200\" y=\"340\" width=\"26\" height=\"50\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"275\" cy=\"165\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "dragon_friendly",
+    "name": "Friendly Dragon",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 110 285 C 120 225 165 190 220 190 C 250 160 295 160 325 190 C 355 195 375 220 382 245 C 405 255 410 285 395 305 C 380 345 345 370 300 372 C 275 392 245 400 220 395 C 170 390 132 350 135 300 C 112 295 102 290 110 285 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 145 255 C 130 230 140 205 165 195 C 190 175 220 175 240 195 C 260 200 270 220 265 240 C 260 265 230 282 200 278 C 175 278 160 270 145 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"215\" cy=\"220\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 185 L 235 150 L 250 185 L 210 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 265 245 C 295 215 340 215 370 245 C 345 260 330 285 335 315 C 305 310 285 292 275 270 C 270 260 268 255 265 245 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 360 305 C 395 300 410 335 388 355 C 370 372 340 365 338 340 C 336 325 345 312 360 305 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"165\" y=\"335\" width=\"24\" height=\"55\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"210\" y=\"338\" width=\"24\" height=\"52\" rx=\"10\" ry=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "fairy",
+    "name": "Fairy",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 185 165 C 185 135 210 115 240 115 C 270 115 295 135 295 165 C 295 200 270 225 240 225 C 210 225 185 200 185 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 225 C 195 210 215 205 240 205 C 270 205 295 220 305 245 C 320 285 310 335 275 360 C 255 375 225 375 205 360 C 170 335 160 285 175 225 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 240 C 120 220 95 245 110 275 C 130 315 170 305 190 280 C 185 265 180 252 170 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 310 240 C 360 220 385 245 370 275 C 350 315 310 305 290 280 C 295 265 300 252 310 240 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 205 275 C 220 255 260 255 275 275 C 265 315 215 315 205 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"230\" cy=\"155\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"250\" cy=\"155\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 228 175 C 235 182 245 182 252 175 C 245 195 235 195 228 175 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 360 115 L 370 130 L 390 135 L 370 140 L 360 155 L 355 140 L 340 135 L 355 130 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "knight",
+    "name": "Knight",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 170 140 C 170 110 195 90 240 90 C 285 90 310 110 310 140 L 310 220 C 310 250 285 270 240 270 C 195 270 170 250 170 220 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 155 L 285 155 L 285 175 L 195 175 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 270 C 195 250 215 245 240 245 C 270 245 295 260 305 285 C 320 325 310 360 280 380 C 260 392 220 392 200 380 C 170 360 160 325 175 270 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 295 C 140 300 130 330 150 350 C 170 365 190 350 195 330 C 185 310 180 300 170 295 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 310 295 C 340 300 350 330 330 350 C 310 365 290 350 285 330 C 295 310 300 300 310 295 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 95 235 L 110 225 L 245 360 L 230 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 105 215 L 125 215 L 125 235 L 105 235 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 290 C 260 285 290 300 290 330 C 290 355 270 372 240 380 C 210 372 190 355 190 330 C 190 300 220 285 240 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "princess",
+    "name": "Princess",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 185 165 C 185 135 210 115 240 115 C 270 115 295 135 295 165 C 295 200 270 225 240 225 C 210 225 185 200 185 165 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 190 125 L 210 95 L 240 120 L 270 95 L 290 125 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 225 C 195 210 215 205 240 205 C 270 205 295 220 305 245 C 330 300 320 355 280 385 C 255 402 225 402 200 385 C 160 355 150 300 175 225 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 300 C 220 275 260 275 280 300 C 260 350 220 350 200 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 255 C 150 265 145 295 165 310 C 182 320 195 305 197 288 C 190 275 185 262 175 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 305 255 C 330 265 335 295 315 310 C 298 320 285 305 283 288 C 290 275 295 262 305 255 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"230\" cy=\"155\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"250\" cy=\"155\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 178 C 235 188 245 188 255 178 C 248 198 232 198 225 178 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "treasure_chest",
+    "name": "Treasure Chest",
+    "category": "fantasy",
+    "svgPath": "<path d=\"M 90 250 L 90 340 C 90 360 105 375 125 375 L 355 375 C 375 375 390 360 390 340 L 390 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 90 250 C 110 190 170 155 240 155 C 310 155 370 190 390 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 275 L 280 275 L 280 340 L 200 340 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"240\" cy=\"310\" r=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 300 L 340 300 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 330 L 340 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 110 260 L 125 260 L 125 365 L 110 365 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 355 260 L 370 260 L 370 365 L 355 365 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 6,
+    "ageMax": 12,
+    "rasterPNGData": null
+  },
+  {
+    "id": "pizza_slice",
+    "name": "Pizza Slice",
+    "category": "food",
+    "svgPath": "<path d=\"M 115 95 L 390 175 L 240 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 115 95 C 190 80 315 115 390 175 C 320 225 270 295 240 375 C 210 325 165 240 115 95 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 140 105 L 365 170 L 350 200 L 130 130 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"245\" cy=\"220\" r=\"14\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"285\" cy=\"250\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"215\" cy=\"265\" r=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 265 205 C 275 195 288 198 292 210 C 296 222 285 232 273 228 C 262 224 258 214 265 205 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "ice_cream",
+    "name": "Ice Cream Cone",
+    "category": "food",
+    "svgPath": "<path d=\"M 170 185 C 170 140 200 110 240 110 C 280 110 310 140 310 185 C 310 230 280 260 240 260 C 200 260 170 230 170 185 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 260 L 175 375 L 305 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 195 310 L 285 310 L 292 330 L 188 330 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"215\" cy=\"175\" r=\"7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"255\" cy=\"165\" r=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"265\" cy=\"200\" r=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 375 C 200 390 280 390 240 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "cupcake",
+    "name": "Cupcake",
+    "category": "food",
+    "svgPath": "<path d=\"M 170 205 C 170 150 205 115 240 115 C 275 115 310 150 310 205 C 310 250 280 275 240 275 C 200 275 170 250 170 205 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 185 275 L 295 275 L 280 375 L 200 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 300 L 280 300 L 275 365 L 205 365 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"240\" cy=\"95\" r=\"10\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 235 105 C 240 130 230 145 210 160 C 240 150 255 130 255 110 C 255 102 247 96 240 100 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 210 295 L 210 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 295 L 225 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 295 L 240 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 255 295 L 255 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 270 295 L 270 370 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "hamburger",
+    "name": "Hamburger",
+    "category": "food",
+    "svgPath": "<path d=\"M 110 215 C 110 155 170 115 240 115 C 310 115 370 155 370 215 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 110 215 L 370 215 L 370 245 L 110 245 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 245 L 360 245 L 350 270 L 130 270 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 110 270 L 370 270 L 370 310 L 110 310 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 125 310 C 125 345 165 375 240 375 C 315 375 355 345 355 310 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"170\" cy=\"175\" rx=\"8\" ry=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"205\" cy=\"160\" rx=\"8\" ry=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240\" cy=\"172\" rx=\"8\" ry=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"275\" cy=\"160\" rx=\"8\" ry=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"310\" cy=\"175\" rx=\"8\" ry=\"5\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
+    "ageMax": 10,
+    "rasterPNGData": null
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "category": "food",
+    "svgPath": "<path d=\"M 240 125 C 285 105 330 135 340 185 C 352 245 300 330 240 370 C 180 330 128 245 140 185 C 150 135 195 105 240 125 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 105 C 252 78 280 62 310 67 C 300 98 272 112 240 112 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 236 75 L 244 75 L 244 120 L 236 120 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 230 C 182 200 210 188 240 195 C 270 188 298 200 310 230 C 298 270 270 292 240 295 C 210 292 182 270 170 230 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "donut",
+    "name": "Donut",
+    "category": "food",
+    "svgPath": "<path d=\"M 240 100 C 315 100 380 165 380 240 C 380 315 315 380 240 380 C 165 380 100 315 100 240 C 100 165 165 100 240 100 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 240 185 C 270 185 295 210 295 240 C 295 270 270 295 240 295 C 210 295 185 270 185 240 C 185 210 210 185 240 185 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"325.0\" cy=\"240.0\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"300.10407640085657\" cy=\"300.1040764008565\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"240.0\" cy=\"325.0\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"179.89592359914346\" cy=\"300.10407640085657\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"155.0\" cy=\"240.0\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"179.89592359914343\" cy=\"179.89592359914346\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"239.99999999999997\" cy=\"155.0\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><ellipse cx=\"300.1040764008565\" cy=\"179.89592359914343\" rx=\"10\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 3,
+    "ageMax": 9,
+    "rasterPNGData": null
+  },
+  {
+    "id": "house_garden",
+    "name": "House with Garden",
+    "category": "buildings",
+    "svgPath": "<path d=\"M 110 210 L 240 110 L 370 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 130 210 L 130 375 L 350 375 L 350 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 215 260 L 265 260 L 265 375 L 215 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"260\" cy=\"320\" r=\"4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 155 240 L 205 240 L 205 290 L 155 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 275 240 L 325 240 L 325 290 L 275 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 120 375 C 135 350 155 350 170 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 200 375 C 215 350 235 350 250 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 280 375 C 295 350 315 350 330 375 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 55 325 C 55 295 78 275 105 280 C 120 265 140 265 155 280 C 180 285 195 305 190 330 C 205 340 205 360 190 372 C 175 390 145 395 120 385 C 105 395 90 398 75 392 C 55 380 48 350 60 335 C 55 332 53 330 55 325 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 110 345 L 120 345 L 120 400 L 110 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 4,
     "ageMax": 11,
-    "category": "buildings"
+    "rasterPNGData": null
+  },
+  {
+    "id": "treehouse",
+    "name": "Treehouse",
+    "category": "buildings",
+    "svgPath": "<path d=\"M 95 175 C 95 130 135 100 190 110 C 215 90 255 90 280 110 C 335 110 375 140 375 185 C 400 205 400 240 375 260 C 355 295 315 310 275 300 C 250 320 215 330 185 322 C 135 312 105 280 110 235 C 95 225 90 205 95 175 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 150 210 L 240 150 L 330 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 170 210 L 170 290 L 310 290 L 310 210 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 225 235 L 255 235 L 255 290 L 225 290 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 190 225 L 220 225 L 220 250 L 190 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 260 225 L 290 225 L 290 250 L 260 250 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 235 290 L 245 290 L 245 400 L 235 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 275 L 170 290 L 200 290 L 205 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 305 275 L 300 290 L 330 290 L 335 275 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 130 310 L 350 310 L 360 325 L 120 325 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 175 325 L 185 325 L 205 400 L 195 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 295 325 L 305 325 L 285 400 L 275 400 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "ageMin": 5,
+    "ageMax": 12,
+    "rasterPNGData": null
   }
 ]

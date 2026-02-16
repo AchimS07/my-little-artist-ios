@@ -70,11 +70,6 @@ struct ProfileView: View {
                             }
                             .pickerStyle(.segmented)
                         }
-                        Section("profile_about_section") {
-                            Text("profile_about_text")
-                                .font(.footnote)
-                                .foregroundStyle(.secondary)
-                        }
                     }
                     .scrollContentBackground(.hidden)
                 } else {
