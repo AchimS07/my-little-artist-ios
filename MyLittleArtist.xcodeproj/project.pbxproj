@@ -16,7 +16,6 @@
 		548227538A864002BEE94101 /* Views/DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */; };
 		91430F1C1F2C461CA606A6A0 /* Views/ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98CB66A4CE24680AC81179F /* Views/ProfileView.swift */; };
 		A55195E62F43085100F7CEF8 /* TemplateImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55195E52F43085000F7CEF8 /* TemplateImportService.swift */; };
-		A5AD16EF2F3330B600B38C6E /* drawingTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */; };
 		A5DFF5DE2F39E5DD00C1916A /* QueryUnderstandingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */; };
 		A5DFF5DF2F39E5DD00C1916A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DD2F39E5DD00C1916A /* UserProfile.swift */; };
 		A5DFF5E02F39E5DD00C1916A /* ActiveProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5DB2F39E5DD00C1916A /* ActiveProfileStore.swift */; };
@@ -35,6 +34,7 @@
 		A5DFF5FA2F39E60E00C1916A /* ParametricCarTemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5F02F39E60E00C1916A /* ParametricCarTemplateRenderer.swift */; };
 		A5DFF5FD2F3F0D3600C1916A /* DrawingTemplate+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFF5FC2F3F0D3600C1916A /* DrawingTemplate+Localization.swift */; };
 		A5DFF5FF2F3F0FA600C1916A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A5DFF5FE2F3F0FA600C1916A /* Localizable.xcstrings */; };
+		A5FCC3302F44A07500E9B4CE /* drawingTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FCC32F2F44A07500E9B4CE /* drawingTemplates.json */; };
 		A5FD63842F324E760041DF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */; };
 		AEB57BBD36704A2A87DCFB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04727C93884A4B59AE021219 /* Assets.xcassets */; };
 		BF1D6D664D0441899BF28B1B /* Models/DrawingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47669090B12649F28116FB65 /* Models/DrawingTemplate.swift */; };
@@ -46,10 +46,8 @@
 		4208C1D4A7964B4EB5DFA286 /* Models/TemplatesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/TemplatesStore.swift; sourceTree = "<group>"; };
 		47669090B12649F28116FB65 /* Models/DrawingTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DrawingTemplate.swift; sourceTree = "<group>"; };
 		50314247D4B54933958A77CB /* Views/TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/TemplatesView.swift; sourceTree = "<group>"; };
-		749E9491663541FA886056CC /* Data/drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data/drawingTemplates.json; sourceTree = "<group>"; };
 		80B15B656E934F74BD8497DB /* App/MyLittleArtistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/MyLittleArtistApp.swift; sourceTree = "<group>"; };
 		A55195E52F43085000F7CEF8 /* TemplateImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateImportService.swift; sourceTree = "<group>"; };
-		A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drawingTemplates.json; sourceTree = "<group>"; };
 		A5DFF5DB2F39E5DD00C1916A /* ActiveProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProfileStore.swift; sourceTree = "<group>"; };
 		A5DFF5DC2F39E5DD00C1916A /* QueryUnderstandingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryUnderstandingService.swift; sourceTree = "<group>"; };
 		A5DFF5DD2F39E5DD00C1916A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -69,6 +67,7 @@
 		A5DFF5FB2F39E61800C1916A /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
 		A5DFF5FC2F3F0D3600C1916A /* DrawingTemplate+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawingTemplate+Localization.swift"; sourceTree = "<group>"; };
 		A5DFF5FE2F3F0FA600C1916A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A5FCC32F2F44A07500E9B4CE /* drawingTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drawingTemplates.json; sourceTree = "<group>"; };
 		A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5FD63852F324E8E0041DF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29FE080D06A4C30AD6FEB3F /* Views/DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DrawView.swift; sourceTree = "<group>"; };
@@ -106,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				A5DFF5FB2F39E61800C1916A /* ProfileDataStore.swift */,
-				749E9491663541FA886056CC /* Data/drawingTemplates.json */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -147,7 +145,7 @@
 				04727C93884A4B59AE021219 /* Assets.xcassets */,
 				A5FD63832F324E760041DF12 /* LaunchScreen.storyboard */,
 				A5FD63852F324E8E0041DF12 /* Info.plist */,
-				A5AD16ED2F332FCD00B38C6E /* drawingTemplates.json */,
+				A5FCC32F2F44A07500E9B4CE /* drawingTemplates.json */,
 				A5DFF5FC2F3F0D3600C1916A /* DrawingTemplate+Localization.swift */,
 				A55195E52F43085000F7CEF8 /* TemplateImportService.swift */,
 			);
@@ -255,7 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AD16EF2F3330B600B38C6E /* drawingTemplates.json in Resources */,
+				A5FCC3302F44A07500E9B4CE /* drawingTemplates.json in Resources */,
 				A5FD63842F324E760041DF12 /* LaunchScreen.storyboard in Resources */,
 				A5DFF5FF2F3F0FA600C1916A /* Localizable.xcstrings in Resources */,
 				AEB57BBD36704A2A87DCFB50 /* Assets.xcassets in Resources */,

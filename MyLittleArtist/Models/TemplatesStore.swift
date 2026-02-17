@@ -41,7 +41,38 @@ final class TemplatesStore: ObservableObject {
         }
         do {
             let data = try Data(contentsOf: url)
-            allTemplates = try JSONDecoder().decode([DrawingTemplate].self, from: data)
+            var decoded = try JSONDecoder().decode([DrawingTemplate].self, from: data)
+
+            // Normalize decoded templates: clamp ages and normalize categories
+            let validCategories = TemplateCategory.allCases.map { $0.rawValue.lowercased() }
+            decoded = decoded.map { t in
+                // Clamp ages to 3...12 and ensure max >= min
+                let clampedMin = max(3, min(12, t.ageMin))
+                let clampedMax = max(clampedMin, min(12, t.ageMax))
+
+                // Normalize category (case-insensitive match to TemplateCategory raw values)
+                let lower = t.category.lowercased()
+                let matchedCategory: String
+                if let matchIndex = validCategories.firstIndex(of: lower) {
+                    matchedCategory = TemplateCategory.allCases[matchIndex].rawValue
+                } else {
+                    #if DEBUG
+                    print("[TemplatesStore] Unknown category in JSON: \(t.category). Defaulting to .shapes")
+                    #endif
+                    matchedCategory = TemplateCategory.shapes.rawValue
+                }
+
+                return DrawingTemplate(
+                    id: t.id,
+                    name: t.name,
+                    templateAsset: t.templateAsset,
+                    ageMin: clampedMin,
+                    ageMax: clampedMax,
+                    category: matchedCategory
+                )
+            }
+
+            allTemplates = decoded
         } catch {
             assertionFailure("Failed to decode drawingTemplates.json: \(error)")
         }

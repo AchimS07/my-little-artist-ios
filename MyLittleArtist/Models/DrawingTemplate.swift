@@ -3,16 +3,17 @@ import Foundation
 struct DrawingTemplate: Identifiable, Codable, Hashable {
     let id: String
     let name: String
-    let svgPath: String
+    /// Name of the PDF template stored in Assets.xcassets (do not include extension).
+    let templateAsset: String
     let ageMin: Int
     let ageMax: Int
     let category: String
     let rasterPNGData: Data?
 
-    init(id: String, name: String, svgPath: String, ageMin: Int, ageMax: Int, category: String, rasterPNGData: Data? = nil) {
+    init(id: String, name: String, templateAsset: String, ageMin: Int, ageMax: Int, category: String, rasterPNGData: Data? = nil) {
         self.id = id
         self.name = name
-        self.svgPath = svgPath
+        self.templateAsset = templateAsset
         self.ageMin = ageMin
         self.ageMax = ageMax
         self.category = category

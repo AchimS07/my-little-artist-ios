@@ -138,7 +138,7 @@ private func exactPath(from points: [CGPoint]) -> Path {
 }
 
 private struct DrawingSnapshotView: View {
-    let templateSVG: String?
+    let templateAsset: String?
     let strokes: [DrawStroke]
     let current: DrawStroke?
     let showGrid: Bool
@@ -163,24 +163,12 @@ private struct DrawingSnapshotView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
             }
 
-            // Template outline layer
-            Canvas { context, canvasSize in
-                guard let svg = templateSVG else { return }
-                let elements = SVGTemplateParser.parse(svg: svg)
-                let scale = min(canvasSize.width, canvasSize.height) / 400.0
-                var transform = CGAffineTransform.identity
-                transform = transform
-                    .translatedBy(x: (canvasSize.width - 400*scale)/2, y: (canvasSize.height - 400*scale)/2)
-                    .scaledBy(x: scale, y: scale)
-                for el in elements {
-                    var path = el.path
-                    path = path.applying(transform)
-                    context.stroke(
-                        path,
-                        with: .color(.primary.opacity(0.9)),
-                        style: StrokeStyle(lineWidth: max(1, el.strokeWidth * scale), lineCap: .round, lineJoin: .round)
-                    )
-                }
+            // Template background (PDF vector from Assets.xcassets)
+            if let asset = templateAsset, !asset.isEmpty {
+                Image(asset)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(16)
             }
 
             ZStack {
@@ -275,7 +263,7 @@ struct FullScreenImagePreview: View {
 struct DrawingExporter {
     /// Renders the current drawing to a UIImage of the given size.
     /// - Parameters:
-    ///   - templateSVG: Optional SVG template string to render beneath the strokes.
+    ///   - templateAsset: Optional PDF template asset name to render beneath the strokes.
     ///   - strokes: Completed strokes to render.
     ///   - current: Current in-progress stroke (optional).
     ///   - size: Target image size in points.
@@ -286,7 +274,7 @@ struct DrawingExporter {
     ///   - scale: Rendering scale (defaults to device screen scale).
     /// - Returns: A rendered UIImage.
     @MainActor static func renderImage(
-        templateSVG: String?,
+        templateAsset: String?,
         strokes: [DrawStroke],
         current: DrawStroke?,
         size: CGSize,
@@ -297,7 +285,7 @@ struct DrawingExporter {
         scale: CGFloat = UIScreen.main.scale
     ) -> UIImage {
         let view = DrawingSnapshotView(
-            templateSVG: templateSVG,
+            templateAsset: templateAsset,
             strokes: strokes,
             current: current,
             showGrid: showGrid,

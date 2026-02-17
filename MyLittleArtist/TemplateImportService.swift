@@ -7,7 +7,7 @@ struct TemplateJSON: Decodable {
     let category: String
     let ageMin: Int?
     let ageMax: Int?
-    let svgPath: String
+    let templateAsset: String?
 }
 
 // Service to import drawing templates from a JSON file into TemplatesStore
@@ -44,7 +44,7 @@ final class TemplateImportService {
             let template = DrawingTemplate(
                 id: item.id,
                 name: item.name,
-                svgPath: item.svgPath,
+                templateAsset: item.templateAsset ?? item.id,
                 ageMin: minAge,
                 ageMax: maxAge,
                 category: categoryEnum.rawValue

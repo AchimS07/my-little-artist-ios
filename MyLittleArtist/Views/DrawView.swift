@@ -23,9 +23,8 @@ private extension View {
     }
 }
 
-private func templateFillPath(for template: DrawingTemplate) -> Path {
-    SVGTemplateParser.fillPath(svg: template.svgPath)
-}
+// For freehand coloring with PDF templates, we don't need an SVG-derived mask path.
+// Masking can be reintroduced later via a dedicated bitmap mask per template.
 
 struct DrawView: View {
     let template: DrawingTemplate
@@ -148,8 +147,11 @@ struct DrawView: View {
                     RoundedRectangle(cornerRadius: 16)
                         .fill(Color.secondary.opacity(0.06))
 
-                    // Template outline
-                    SVGTemplateCanvas(svg: template.svgPath)
+                    // Template outline (PDF vector from Assets.xcassets)
+                    Image(template.templateAsset)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(16)
                         .allowsHitTesting(false)
 
                     // User drawing
@@ -160,8 +162,8 @@ struct DrawView: View {
                         lineWidth: lineWidth,
                         isErasing: isErasing,
                         showGrid: showGrid,
-                        maskPathTemplateSpace: templateFillPath(for: template),
-                        enableMasking: !showGrid,
+                        maskPathTemplateSpace: nil,
+                        enableMasking: false,
                         onStrokeCompleted: { saveToUndoStack() } // NEW: Save undo state
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 16))
@@ -250,7 +252,10 @@ struct DrawView: View {
         let content = ZStack {
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color.white)
-            SVGTemplateCanvas(svg: template.svgPath)
+            Image(template.templateAsset)
+                .resizable()
+                .scaledToFit()
+                .padding(16)
                 .allowsHitTesting(false)
             DrawingCanvas(
                 strokes: .constant(strokes),
@@ -259,7 +264,7 @@ struct DrawView: View {
                 lineWidth: lineWidth,
                 isErasing: false,
                 showGrid: false,
-                maskPathTemplateSpace: templateFillPath(for: template),
+                maskPathTemplateSpace: nil,
                 enableMasking: false
             )
             .clipShape(RoundedRectangle(cornerRadius: 16))
